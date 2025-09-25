@@ -138,10 +138,11 @@ const Speakers = () => {
               <div className="flex items-start gap-4 mb-4">
                 <div className="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
                   <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-transparent"></div>
-                  <img
+                  <Image
                     src={speaker.image}
                     alt={speaker.name}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
                 <div className="flex-1">

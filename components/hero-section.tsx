@@ -1,6 +1,5 @@
 'use client'
 
-import { scrollToSection } from '../utils/whatsapp'
 import { useTicketModalContext } from '@/contexts/ticket-modal-context'
 import { motion } from 'framer-motion'
 

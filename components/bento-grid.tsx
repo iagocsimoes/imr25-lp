@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { TrendingUp, Users, Zap, Target, Globe, Award, BarChart3, Rocket } from "lucide-react";
+import { TrendingUp, Users, Zap, Target, Globe, Award, Rocket } from "lucide-react";
 import { Visual2 } from "./animated-card-diagram";
 
 const BentoGrid = () => {
