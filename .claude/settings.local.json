@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\app/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\app/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\app/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\app/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\app/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components\\magicui/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\app/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\app/**)",
+      "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components\\ui/**)",
+      "Bash(find:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
