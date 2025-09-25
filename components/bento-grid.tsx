@@ -191,7 +191,7 @@ const BentoGrid = () => {
                     className="h-full bg-gradient-to-r from-red-500 to-red-400"
                     initial={{ width: 0 }}
                     whileInView={{ width: "100%" }}
-                    transition={{ duration: 1, delay: 0.7, ease: "easeOut" }}
+                    transition={{ duration: 1, delay: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
                   />
                 </motion.div>
               </div>

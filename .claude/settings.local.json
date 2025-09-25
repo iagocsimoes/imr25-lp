@@ -29,7 +29,9 @@
       "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\app/**)",
       "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\app/**)",
       "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components\\ui/**)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm install:*)"
     ],
     "deny": [],
     "ask": []
