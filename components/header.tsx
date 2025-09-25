@@ -37,11 +37,10 @@ const Header = () => {
       } py-2`}
       style={{
         willChange: "transform",
-        transform: "translateZ(0)",
+        transform: "translateX(-50%) translateZ(0)",
         backfaceVisibility: "hidden",
         perspective: "1000px",
         left: "50%",
-        transform: "translateX(-50%)",
       }}
     >
       <a
