@@ -31,7 +31,8 @@
       "Read(/C:\\Users\\Iago\\Documents\\Projetos\\wider\\components\\ui/**)",
       "Bash(find:*)",
       "Bash(pnpm build:*)",
-      "Bash(pnpm install:*)"
+      "Bash(pnpm install:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []
