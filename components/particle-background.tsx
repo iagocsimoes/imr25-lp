@@ -19,7 +19,7 @@ export default function ParticlesBackground() {
   useEffect(() => {
     const generateParticles = () => {
       const newParticles: Particle[] = []
-      const particleCount = 100
+      const particleCount = 70
 
       for (let i = 0; i < particleCount; i++) {
         newParticles.push({
