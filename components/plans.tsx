@@ -1,8 +1,7 @@
 'use client'
 
-import { Check, ChevronRight } from 'lucide-react'
+import { ChevronRight } from 'lucide-react'
 import { Button } from './ui/button'
-import { Card, CardContent } from './ui/card'
 import { openWhatsApp } from '../utils/whatsapp'
 import { useTicketModalContext } from '@/contexts/ticket-modal-context'
 import { motion, Variants } from 'framer-motion'
