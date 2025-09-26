@@ -17,61 +17,61 @@ const BentoGrid = () => {
   const items = [
     {
       id: 1,
-      title: "Crescimento Exponencial",
-      description: "Estratégias comprovadas para escalar seu negócio 10x mais rápido",
+      title: "Transformação Empresarial",
+      description: "Amplie sua visão empresarial e enxergue novas oportunidades de crescimento",
       icon: TrendingUp,
-      gradient: "from-red-500/20 to-red-600/10",
+      gradient: "from-[#ec020d]/20 to-[#9a0008]/10",
       size: "col-span-1 row-span-2",
-      stats: "+347%",
-      statsLabel: "Crescimento médio",
+      stats: "IMR25",
+      statsLabel: "O Chamado",
       hasCustomVisual: true
     },
     {
       id: 2,
       title: "Conexões Estratégicas",
-      description: "Engajamento direto com tomadores de decisão e a elite empresarial de diversos setores da economia capixaba.",
+      description: "Relacionamento com líderes empresariais de todos os setores. Networking dirigido para construir parcerias.",
       icon: Users,
-      gradient: "from-blue-500/20 to-blue-600/10",
+      gradient: "from-[#1c1d1c]/20 to-[#1c1d1c]/10",
       size: "col-span-2 row-span-1",
       stats: "1.000",
       statsLabel: "Empresários"
     },
     {
       id: 3,
-      title: "Liderança de Alta Performance",
-      description: "Domine a arte de liderar com clareza e comunicar com impacto para engajar sua equipe de verdade.",
+      title: "Conhecimento Prático",
+      description: "Melhore sua liderança e gestão através de metodologias práticas e aplique métodos que otimizam processos.",
       icon: Zap,
-      gradient: "from-purple-500/20 to-purple-600/10",
+      gradient: "from-[#9a0008]/20 to-[#ec020d]/10",
       size: "col-span-1 row-span-1",
-      stats: "Engajamento",
-      statsLabel: "do Time"
+      stats: "Aplique",
+      statsLabel: "Imediatamente"
     },
     {
       id: 4,
-      title: "Conteúdo da Vida Real",
-      description: "Tenha acesso a estratégias de empresários com resultados comprovados no mercado.",
+      title: "Comunicação e Mercado",
+      description: "Estratégias de comunicação e mercado com práticas atuais para vender mais e se destacar.",
       icon: Target,
-      gradient: "from-green-500/20 to-green-600/10",
+      gradient: "from-[#d8d8d8]/10 to-[#fbfcff]/5",
       size: "col-span-1 row-span-1",
-      stats: "Aprenda",
-      statsLabel: "com quem fez"
+      stats: "Domine",
+      statsLabel: "o Mercado"
     },
     {
       id: 5,
-      title: "Palco de Gigantes",
-      description: "Tenha acesso a líderes e especialistas com mais de R$ 1 bilhão em faturamento anual somado.",
+      title: "Abordagem Prática",
+      description: "Conteúdo de alto nível direcionado ao médio empresário. Ambiente de provocação para despertar insights.",
       icon: Globe,
-      gradient: "from-cyan-500/20 to-cyan-600/10",
+      gradient: "from-[#ec020d]/10 to-[#9a0008]/5",
       size: "col-span-2 row-span-1",
-      stats: "+13",
-      statsLabel: "Palestrantes"
+      stats: "7+",
+      statsLabel: "Mentores"
     },
     {
       id: 6,
       title: "Experiência VIP Exclusiva",
-      description: "Networking exclusivo com o palestrante principal, Lásaro do Carmo, e happy hour para convidados.",
+      description: "Networking Experience com Lásaro do Carmo, happy hour exclusivo e acesso ao VIP Lounge.",
       icon: Award,
-      gradient: "from-yellow-500/20 to-yellow-600/10",
+      gradient: "from-[#fbfcff]/10 to-[#d8d8d8]/5",
       size: "col-span-1 row-span-1",
       stats: "Acesso",
       statsLabel: "VIP Lounge"
@@ -88,30 +88,29 @@ const BentoGrid = () => {
         viewport={{ once: true, amount: 0.2 }}
       >
         <motion.div
-          className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/30 px-4 py-2 rounded-full mb-6"
+          className="inline-flex items-center gap-2 bg-[#ec020d]/10 border border-[#ec020d]/30 px-4 py-2 rounded-full mb-6"
           custom={0}
           variants={fadeUp}
         >
-          <Rocket className="w-4 h-4 text-red-400" />
-          <span className="text-sm text-red-400 font-medium uppercase tracking-wider">Por que participar</span>
+          <Rocket className="w-4 h-4 text-[#ec020d]" />
+          <span className="text-sm text-[#ec020d] font-medium uppercase tracking-wider">O Que Você Vai Acessar</span>
         </motion.div>
         <motion.h1
           className="text-4xl md:text-5xl lg:text-7xl max-sm:text-3xl font-medium mb-6 max-sm:mb-4 text-white max-w-[1000px] max-sm:max-w-full text-center mx-auto"
           custom={1}
           variants={fadeUp}
         >
-          Uma experiência que vai{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600">
-            transformar
-          </span>{" "}
-          seu negócio
+          Prepare-se para uma experiência que vai{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ec020d] to-[#9a0008]">
+            além do convencional
+          </span>
         </motion.h1>
         <motion.p
           className="text-lg max-sm:text-base text-gray-300 leading-relaxed max-w-3xl max-sm:max-w-full mx-auto font-medium"
           custom={2}
           variants={fadeUp}
         >
-          Descubra os pilares fundamentais que separam empresas comuns de impérios empresariais
+          Estratégias que vão além do óbvio para você enxergar novas oportunidades de crescimento
         </motion.p>
       </motion.div>
 
@@ -153,7 +152,7 @@ const BentoGrid = () => {
               <div>
                 <div className="flex items-start justify-between mb-4">
                   <div className="p-3 rounded-xl bg-gray-800/50">
-                    <item.icon className="w-6 h-6 text-red-400" />
+                    <item.icon className="w-6 h-6 text-[#ec020d]" />
                   </div>
 
                   {item.stats && (
@@ -188,7 +187,7 @@ const BentoGrid = () => {
                   transition={{ delay: 0.5 }}
                 >
                   <motion.div
-                    className="h-full bg-gradient-to-r from-red-500 to-red-400"
+                    className="h-full bg-gradient-to-r from-[#ec020d] to-[#9a0008]"
                     initial={{ width: 0 }}
                     whileInView={{ width: "100%" }}
                     transition={{ duration: 1, delay: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}

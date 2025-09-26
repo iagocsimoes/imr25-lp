@@ -25,13 +25,13 @@ export default function TestimonialOverlay() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="transform z-20 flex items-center justify-center mt-8 sm:mt-16"
+      className="transform z-20 flex items-center justify-center mt-24 sm:mt-32"
     >
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
-        className="max-w-[280px] sm:max-w-[380px] bg-gradient-to-r from-red-800/20 to-slate-950/20 rounded-full px-3 sm:px-6 py-2 sm:py-3 shadow-2xl border border-red-900/30 backdrop-blur-sm"
+        className="max-w-[280px] sm:max-w-[380px] bg-gradient-to-r from-[#9a0008]/20 to-slate-950/20 rounded-full px-3 sm:px-6 py-2 sm:py-3 shadow-2xl border border-[#9a0008]/30 backdrop-blur-sm"
       >
         <div className="flex items-center gap-2 sm:gap-4">
           <motion.div
@@ -53,7 +53,7 @@ export default function TestimonialOverlay() {
                   visible: { opacity: 1, scale: 1, y: 0 },
                 }}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className={`w-6 h-6 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-red-500 ${
+                className={`w-6 h-6 sm:w-10 sm:h-10 rounded-full overflow-hidden border-2 border-[#ec020d] ${
                   index > 0 ? '-ml-1.5 sm:-ml-3' : ''
                 } relative z-${40 - index * 10}`}
               >
@@ -94,13 +94,13 @@ export default function TestimonialOverlay() {
                   }}
                   transition={{ duration: 0.3, ease: 'easeOut' }}
                 >
-                  <Star className="w-2.5 h-2.5 sm:w-4 sm:h-4 fill-red-500 text-red-500" />
+                  <Star className="w-2.5 h-2.5 sm:w-4 sm:h-4 fill-[#ec020d] text-[#ec020d]" />
                 </motion.div>
               ))}
             </motion.div>
             <div className="text-gray-300 font-sk-modernist">
               <span className="text-xs sm:text-base font-extralight">
-                +100 conexões
+                +1000 empresários
               </span>
             </div>
           </motion.div>

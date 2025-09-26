@@ -17,14 +17,14 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
   const tickets = [
     {
       id: 'black',
-      name: 'Ingresso Black',
+      name: 'Ingresso BLACK',
       price: '12x de R$ 83,08',
       fullPrice: 'ou R$ 997 à vista',
-      description: 'Ideal para: O empresário focado no conteúdo essencial e na energia do evento.',
+      description: 'Acesso completo ao conteúdo do evento',
       features: [
-        'Acesso: Lugar no setor posterior do evento, com cadeira e mesa',
-        'Conteúdo: Acesso total a todas as palestras',
-        'Alimentação: Inclui acesso a uma mesa de frutas',
+        'Acesso ao setor posterior (cadeira e mesa)',
+        'Mesa de frutas',
+        'Acesso total ao conteúdo do evento',
       ],
       bgColor: 'from-gray-900 to-black',
       borderColor: 'border-gray-600',
@@ -32,78 +32,88 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
     },
     {
       id: 'gold',
-      name: 'Ingresso Gold',
+      name: 'Ingresso GOLD',
       price: '12x de R$ 249,75',
       fullPrice: 'ou R$ 2.997 à vista',
-      description: 'Ideal para: Quem busca, além do conteúdo, conexões estratégicas e maior conforto.',
+      description: 'Experiência completa com networking dirigido',
       features: [
-        'Acesso: Assento privilegiado no setor central do evento, com cadeira e mesa',
-        'Alimentação: Inclui almoço para otimizar seu tempo, além da mesa de frutas',
-        'Networking: Acesso ao "Networking Experience", um momento direcionado para conexões de alto nível',
+        'Acesso ao setor central (cadeira e mesa)',
+        'Mesa de frutas',
+        'Acesso total ao conteúdo do evento',
+        'Almoço incluído',
+        'Networking Experience',
       ],
-      bgColor: 'from-yellow-900 to-black',
-      borderColor: 'border-yellow-600',
-      titleColor: 'text-yellow-400'
+      bgColor: 'from-[#d8d8d8]/20 to-black',
+      borderColor: 'border-[#d8d8d8]/50',
+      titleColor: 'text-[#d8d8d8]'
     },
     {
       id: 'vip',
       name: 'Ingresso VIP',
       price: '12x de R$ 499,75',
       fullPrice: 'ou R$ 5.997 à vista',
-      description: 'Ideal para: A experiência definitiva para quem busca o máximo de conforto, exclusividade e acesso.',
+      description: 'A experiência definitiva com acesso total e exclusivo',
       features: [
-        'Acesso: Lugar no exclusivo VIP Lounge, com cadeira e mesa em área privilegiada',
-        'Alimentação Premium: Experiência completa com café da manhã, almoço incluído e mesa gastronômica com serviço de garçom',
-        'Networking Exclusivo: Inclui "Networking Experience" com o palestrante principal, Lásaro do Carmo, e acesso a happy hour exclusivo ao final do evento',
+        'Acesso ao VIP Lounge (cadeira e mesa)',
+        'Café da manhã incluído',
+        'Almoço incluído',
+        'Mesa gastronômica e serviço de garçom',
+        'Acesso total ao conteúdo do evento',
+        'Networking Experience com Lásaro do Carmo',
+        'Happy hour exclusivo',
       ],
-      bgColor: 'from-red-900 to-black',
-      borderColor: 'border-red-600',
-      titleColor: 'text-red-400'
+      bgColor: 'from-[#9a0008] to-black',
+      borderColor: 'border-[#ec020d]',
+      titleColor: 'text-[#ec020d]'
     }
   ]
 
   const packages = [
     {
       id: 'platinum',
-      name: 'Pacote Platinum',
+      name: 'PACOTE PLATINUM',
+      originalPrice: 'R$ 7.991',
       price: '12x de R$ 581,66',
       fullPrice: 'ou R$ 6.980 à vista',
-      description: 'Perfeito para equipes que querem a experiência completa do evento',
+      description: 'Leve seus stakeholders para a transformação',
       items: [
         '1 Ingresso VIP',
         '2 Ingressos GOLD',
         '2 Ingressos BLACK'
       ],
       total: '5 ingressos total',
-      bgColor: 'from-purple-900 to-black',
-      borderColor: 'border-purple-600',
-      titleColor: 'text-purple-400'
+      bgColor: 'from-cyan-600/20 to-slate-950',
+      borderColor: 'border-cyan-600/50',
+      titleColor: 'text-white',
+      glowColor: 'cyan'
     },
     {
       id: 'diamond',
-      name: 'Pacote Diamond',
+      name: 'PACOTE DIAMOND',
+      originalPrice: 'R$ 16.979',
       price: '12x de R$ 990,83',
       fullPrice: 'ou R$ 11.890 à vista',
-      description: 'A escolha ideal para empresas que querem maximizar o impacto do evento',
+      description: 'Garanta que sua equipe e parceiros estejam na vanguarda da inovação',
       items: [
         '2 Ingressos VIP',
         '4 Ingressos GOLD',
         '3 Ingressos BLACK'
       ],
       total: '9 ingressos total',
-      bgColor: 'from-cyan-900 to-black',
-      borderColor: 'border-cyan-600',
-      titleColor: 'text-cyan-400'
+      bgColor: 'from-blue-600/30 to-slate-950',
+      borderColor: 'border-blue-600/50',
+      titleColor: 'text-white',
+      glowColor: 'blue'
     }
   ]
 
   const handleTicketSelect = (ticket: typeof tickets[0]) => {
-    openWhatsApp(`Olá! Quero garantir meu ${ticket.name} para o Encontro da Elite. Podem me enviar mais detalhes?`)
+    openWhatsApp(`Olá! Quero garantir meu ${ticket.name} para o IMR25. Podem me enviar mais detalhes?`)
     onClose()
   }
 
   const handlePackageSelect = (pkg: typeof packages[0]) => {
-    openWhatsApp(`Olá! Tenho interesse no ${pkg.name} para o Encontro da Elite. Podem me enviar mais informações sobre esse pacote?`)
+    openWhatsApp(`Olá! Tenho interesse no ${pkg.name} para o IMR25. Podem me enviar mais informações sobre esse pacote?`)
     onClose()
   }
 
@@ -131,7 +141,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
             <div className="flex flex-col h-full">
               {/* Header */}
               <div className="flex items-center justify-between p-4 md:p-6 border-b border-gray-800">
-                <h2 className="text-xl md:text-2xl font-semibold text-white">Escolha sua experiência</h2>
+                <h2 className="text-xl md:text-2xl font-semibold text-white">Escolha Sua Experiência</h2>
                 <button
                   onClick={onClose}
                   className="w-8 h-8 rounded-full bg-gray-800 hover:bg-gray-700 flex items-center justify-center transition-colors"
@@ -162,7 +172,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                   }`}
                 >
                   <Users className="w-4 h-4 inline mr-2" />
-                  Pacotes para Equipes
+                  Pacotes Exclusivos para Embaixadores
                 </button>
               </div>
 
@@ -210,47 +220,75 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                     ))}
                   </div>
                 ) : (
-                  <div className="grid gap-4 md:gap-6 sm:grid-cols-1 md:grid-cols-2">
-                    {packages.map((pkg) => (
+                  <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+                    {packages.map((pkg, index) => (
                       <motion.div
                         key={pkg.id}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.1 }}
-                        className={`bg-gradient-to-tl ${pkg.bgColor} border ${pkg.borderColor} rounded-xl p-4 md:p-6 min-h-[450px] flex flex-col justify-between`}
+                        transition={{ delay: 0.1 * index }}
+                        className="relative group"
                       >
-                        <div className="flex-1">
-                          <h3 className={`text-lg md:text-xl font-semibold mb-3 ${pkg.titleColor}`}>
-                            {pkg.name}
-                          </h3>
-                          <p className="text-gray-400 text-sm mb-6 leading-relaxed">{pkg.description}</p>
+                        {/* Neon Glow Background */}
+                        <div className={`absolute -inset-4 bg-gradient-to-r ${pkg.bgColor} rounded-3xl blur-2xl opacity-60 group-hover:opacity-80 transition-opacity ${pkg.glowColor === 'cyan' ? 'animate-pulse' : ''}`}></div>
 
-                          <div className="mb-6">
-                            <div className="text-xl md:text-2xl font-bold text-white mb-2">{pkg.price}</div>
-                            <div className="text-sm text-gray-400">{pkg.fullPrice}</div>
-                          </div>
+                        {/* Futuristic Border Glow */}
+                        <div className={`absolute inset-0 bg-gradient-to-r ${pkg.bgColor} rounded-2xl opacity-50 group-hover:opacity-70 transition-opacity blur-sm`}></div>
 
-                          <div className="mb-8">
-                            <h4 className="text-sm font-medium text-gray-300 mb-3">Inclui:</h4>
-                            <div className="space-y-2">
+                        {/* Tech Frame */}
+                        <div className="relative bg-slate-950/95 border border-gray-800/50 rounded-2xl p-6 md:p-8 min-h-[500px] flex flex-col justify-between backdrop-blur-sm">
+                          {/* Corner Decorations */}
+                          <div className="absolute top-2 left-2 w-8 h-8 border-l-2 border-t-2 border-gray-600/30"></div>
+                          <div className="absolute top-2 right-2 w-8 h-8 border-r-2 border-t-2 border-gray-600/30"></div>
+                          <div className="absolute bottom-2 left-2 w-8 h-8 border-l-2 border-b-2 border-gray-600/30"></div>
+                          <div className="absolute bottom-2 right-2 w-8 h-8 border-r-2 border-b-2 border-gray-600/30"></div>
+
+                          <div className="flex-1">
+                            {/* Header */}
+                            <div className="mb-6">
+                              <h3 className="text-xl md:text-2xl font-bold text-white mb-1">
+                                PACOTE
+                              </h3>
+                              <h2 className={`text-3xl md:text-4xl font-black mb-4 ${pkg.glowColor === 'cyan' ? 'text-cyan-400' : 'text-blue-400'}`}>
+                                {pkg.name.replace('PACOTE ', '')}
+                              </h2>
+                            </div>
+
+                            {/* Pricing */}
+                            <div className="mb-6">
+                              <div className="flex items-baseline gap-2 mb-2">
+                                <span className="text-sm text-gray-500 line-through">DE {pkg.originalPrice}</span>
+                                <span className="text-sm text-gray-400">POR</span>
+                              </div>
+                              <div className="text-2xl md:text-3xl font-bold text-white mb-1">{pkg.price}</div>
+                              <div className="text-sm text-gray-400">{pkg.fullPrice}</div>
+                            </div>
+
+                            <div className="h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent my-6"></div>
+
+                            {/* Items */}
+                            <div className="space-y-3">
                               {pkg.items.map((item, index) => (
                                 <div key={index} className="flex items-center gap-3">
-                                  <Check className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                                  <span className="text-xs md:text-sm text-gray-300">{item}</span>
+                                  <div className="w-1.5 h-1.5 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full"></div>
+                                  <span className="text-sm text-gray-300 font-medium">{item}</span>
                                 </div>
                               ))}
                             </div>
-                            <div className="mt-3 text-xs text-gray-500 font-medium">{pkg.total}</div>
                           </div>
-                        </div>
 
-                        <Button
-                          onClick={() => handlePackageSelect(pkg)}
-                          className="w-full bg-gray-700 hover:bg-gray-600 text-white py-3 text-sm md:text-base"
-                        >
-                          Selecionar {pkg.name}
-                          <ChevronRight className="w-4 h-4 ml-2" />
-                        </Button>
+                          <Button
+                            onClick={() => handlePackageSelect(pkg)}
+                            className={`w-full mt-6 py-3 text-white font-semibold rounded-lg transition-all duration-300 ${
+                              pkg.glowColor === 'cyan'
+                                ? 'bg-cyan-600/30 hover:bg-cyan-600/50 border border-cyan-600/50 hover:border-cyan-500'
+                                : 'bg-blue-600/30 hover:bg-blue-600/50 border border-blue-600/50 hover:border-blue-500'
+                            }`}
+                          >
+                            Selecionar Pacote
+                            <ChevronRight className="w-4 h-4 ml-2" />
+                          </Button>
+                        </div>
                       </motion.div>
                     ))}
                   </div>

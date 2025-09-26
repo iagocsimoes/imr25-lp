@@ -7,11 +7,11 @@ import { motion, Variants } from "framer-motion";
 const Speakers = () => {
   const speakers = [
     {
-      name: "Lásaro do Carmo",
-      role: "CEO & Founder",
-      company: "Wider Group",
+      name: "Wander Miranda",
+      role: "Estratégia e Coragem",
+      company: "O Código da Coragem",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-      bio: "Empreendedor serial com mais de 15 anos de experiência em transformação digital",
+      bio: "Como transformar dor em estratégia e medo em movimento: Supere seus limites.",
       social: {
         linkedin: "#",
         instagram: "#",
@@ -19,44 +19,44 @@ const Speakers = () => {
       }
     },
     {
-      name: "Marina Santos",
-      role: "Diretora de Inovação",
-      company: "Tech Ventures",
+      name: "Marral Lage",
+      role: "Faturamento Bilionário",
+      company: "Estratégias Avançadas",
       image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
-      bio: "Especialista em estratégias de crescimento e scale-ups no mercado brasileiro",
+      bio: "O que muda na mentalidade de quem sai dos milhões e chega ao bilhão: Pense grande.",
       social: {
         linkedin: "#",
         instagram: "#"
       }
     },
     {
-      name: "Roberto Silva",
-      role: "Head of Sales",
-      company: "Growth Partners",
+      name: "Marcelo Coelho",
+      role: "Gestão Afinada",
+      company: "Liderança Criativa",
       image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-      bio: "Top voice em vendas B2B com resultados comprovados em grandes corporações",
+      bio: "O que o jazz ensina sobre liderança, sintonia e improviso: Lidere com maestria.",
       social: {
         linkedin: "#",
         website: "#"
       }
     },
     {
-      name: "Ana Paula Ferreira",
-      role: "CMO",
-      company: "Digital Leaders",
+      name: "Vitor Escocard",
+      role: "Networking Milionário",
+      company: "Conexões Estratégicas",
       image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
-      bio: "Referência em marketing digital e geração de demanda para empresas SaaS",
+      bio: "Como gerar conexões que se transformam em crescimento real: Amplie sua rede.",
       social: {
         instagram: "#",
         website: "#"
       }
     },
     {
-      name: "Carlos Mendes",
-      role: "Investidor Anjo",
-      company: "Venture Capital BR",
+      name: "Gustavo Fonseca",
+      role: "Estratégias Jurídicas",
+      company: "Blindagem Empresarial",
       image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
-      bio: "Investidor com portfólio de 50+ startups e mentor de empreendedores",
+      bio: "Como tomar decisões estratégicas com segurança jurídica: Proteja seu negócio.",
       social: {
         linkedin: "#",
         instagram: "#",
@@ -64,11 +64,11 @@ const Speakers = () => {
       }
     },
     {
-      name: "Juliana Costa",
-      role: "Head of People",
-      company: "Future Work",
+      name: "Raphael Ruffo",
+      role: "Liderança sem Filtro",
+      company: "Conduzir na Pressão",
       image: "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?w=400&h=400&fit=crop",
-      bio: "Pioneira em cultura organizacional e gestão de talentos na era digital",
+      bio: "Como sair do modo 'apagador de incêndios' e virar líder de verdade: Seja proativo.",
       social: {
         linkedin: "#"
       }
@@ -88,32 +88,15 @@ const Speakers = () => {
     <div className="relative z-1 container mx-auto px-4 max-sm:px-6 py-20 max-sm:py-12">
       {/* Header */}
       <motion.div
-        className="text-center mb-16 max-sm:mb-10"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        className="text-center mb-12"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
       >
-        <motion.div
-          className="inline-flex items-center gap-2 bg-gray-500/20 px-4 py-2 rounded-full mb-6"
-          custom={0}
-          variants={fadeUp}
-        >
-          <span className="text-sm text-gray-400 font-medium uppercase tracking-wider">Conheça os especialistas</span>
-        </motion.div>
-        <motion.h1
-          className="text-4xl md:text-5xl lg:text-8xl max-sm:text-3xl font-medium mb-6 max-sm:mb-4 text-white max-w-[1200px] max-sm:max-w-full text-center mx-auto"
-          custom={1}
-          variants={fadeUp}
-        >
-          Palestrantes Confirmados
-        </motion.h1>
-        <motion.p
-          className="text-lg max-sm:text-base text-white leading-relaxed opacity-90 max-w-3xl max-sm:max-w-full mx-auto font-medium"
-          custom={2}
-          variants={fadeUp}
-        >
-          Líderes de mercado compartilhando experiências práticas e insights transformadores
-        </motion.p>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl max-sm:text-3xl font-medium text-white">
+          Conheça todos os palestrantes
+        </h2>
       </motion.div>
 
       {/* Speakers Grid */}
@@ -131,13 +114,13 @@ const Speakers = () => {
             variants={fadeUp}
           >
             {/* Glow effect on hover */}
-            <div className="absolute inset-0 bg-gradient-to-t from-red-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#ec020d]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
             <div className="relative p-6 max-sm:p-4">
               {/* Image and Info */}
               <div className="flex items-start gap-4 mb-4">
                 <div className="relative w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
-                  <div className="absolute inset-0 bg-gradient-to-br from-red-500/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#ec020d]/20 to-transparent"></div>
                   <Image
                     src={speaker.image}
                     alt={speaker.name}

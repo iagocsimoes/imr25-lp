@@ -31,7 +31,7 @@ const Metrics = () => {
         custom={0}
       >
         <h1 className="text-2xl text-white md:text-3xl max-sm:text-xl max-w-[700px] max-sm:max-w-full font-medium text-center leading-relaxed mt-12 max-sm:mt-8">
-          Um movimento criado para transformar o ambiente de negócios capixaba com seriedade e estratégia.
+          O Palco das Estratégias que Transformarão os Negócios do Estado
         </h1>
       </motion.div>
 
@@ -50,11 +50,11 @@ const Metrics = () => {
         >
           <div className="flex items-center flex-col gap-2">
             <h2 className="text-7xl font-medium">1.000</h2>
-            <span className="font-medium text-lg">Empresários comprometidos</span>
+            <span className="font-medium text-lg">Empresários</span>
           </div>
           <div className="flex items-start flex-col gap-2">
-            <h2 className="text-7xl font-medium">13+</h2>
-            <span className="font-medium text-lg">Palestrantes e convidados</span>
+            <h2 className="text-7xl font-medium">7+</h2>
+            <span className="font-medium text-lg">Mentores de alto nível</span>
           </div>
         </motion.div>
 
@@ -101,7 +101,7 @@ const Metrics = () => {
 
           <div className="flex items-start flex-col gap-2 -mt-28">
             <h2 className="text-7xl font-medium">3</h2>
-            <span className="font-medium text-lg">Tipos de experiência</span>
+            <span className="font-medium text-lg">Níveis de experiência</span>
           </div>
 
           <div className="flex items-center ml-10">
@@ -139,8 +139,8 @@ const Metrics = () => {
           </div>
 
           <div className="flex items-start flex-col gap-2 -mt-24">
-            <h2 className="text-7xl font-medium">1</h2>
-            <span className="font-medium text-lg">Dia de imersão total</span>
+            <h2 className="text-7xl font-medium">12</h2>
+            <span className="font-medium text-lg">de Novembro - Dia intenso de imersão</span>
           </div>
         </motion.div>
 
@@ -233,9 +233,9 @@ const Metrics = () => {
         <div className="grid grid-cols-2 gap-8 text-center">
           {[
             { value: '1.000', label: 'Empresários comprometidos' },
-            { value: '13+', label: 'Palestrantes e convidados' },
-            { value: '3', label: 'Tipos de experiência' },
-            { value: '1', label: 'Dia de imersão total' },
+            { value: '7+', label: 'Mentores de alto nível' },
+            { value: '3', label: 'Níveis de experiência' },
+            { value: '12/11', label: 'Data do evento' },
           ].map((item, i) => (
             <motion.div
               key={i}
@@ -261,10 +261,10 @@ const Metrics = () => {
       >
         <button
           onClick={openModal}
-          className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-8 max-sm:px-6 py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-red-500/25 text-lg max-sm:text-sm cursor-pointer max-sm:w-full max-sm:justify-center"
+          className="flex items-center gap-2 bg-[#ec020d] hover:bg-[#9a0008] text-white px-8 max-sm:px-6 py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-[#ec020d]/25 text-lg max-sm:text-sm cursor-pointer max-sm:w-full max-sm:justify-center"
           style={{ fontFamily: 'SK-Modernist, sans-serif' }}
         >
-          Garantir Vaga no Evento
+          GARANTA AGORA SUA VAGA
           <MoveRight className="size-6 max-sm:size-4" />
         </button>
 
@@ -272,7 +272,7 @@ const Metrics = () => {
           <span className="text-white/80 max-sm:text-sm">
             Vagas limitadas
           </span>
-          <span className="w-2.5 h-2.5 max-sm:w-2 max-sm:h-2 bg-red-400 rounded-full ml-2 animate-pulse"></span>
+          <span className="w-2.5 h-2.5 max-sm:w-2 max-sm:h-2 bg-[#ec020d] rounded-full ml-2 animate-pulse"></span>
         </div>
       </motion.div>
     </section>

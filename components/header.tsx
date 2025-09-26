@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useTicketModalContext } from '@/contexts/ticket-modal-context'
+import Image from 'next/image'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -32,7 +33,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-4 z-[9999] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-slate-950/80 md:flex backdrop-blur-sm border border-gray-800/50 shadow-lg transition-all duration-300 ${
+      className={`fixed top-16 z-[9999] mx-auto hidden w-full flex-row items-center justify-between self-start rounded-full bg-slate-950/80 md:flex backdrop-blur-sm border border-gray-800/50 shadow-lg transition-all duration-300 ${
         isScrolled ? "max-w-3xl px-2" : "max-w-5xl px-4"
       } py-2`}
       style={{
@@ -54,9 +55,13 @@ const Header = () => {
         }}
       >
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">E</span>
-          </div>
+          <Image
+            src="/logo imr.png"
+            alt="IMR25"
+            width={isScrolled ? 80 : 100}
+            height={isScrolled ? 32 : 40}
+            className="transition-all duration-300"
+          />
         </div>
       </a>
 
@@ -86,7 +91,7 @@ const Header = () => {
             scrollToSection('speakers')
           }}
         >
-          <span className="relative z-20">Palestrantes</span>
+          <span className="relative z-20">Lineup</span>
         </a>
         <a
           className="relative px-4 py-2 text-gray-400 hover:text-white transition-colors cursor-pointer"
@@ -102,9 +107,9 @@ const Header = () => {
       <div className="flex items-center gap-4">
         <a
           onClick={openModal}
-          className="rounded-md font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center bg-gradient-to-b from-red-500 to-red-600 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] px-4 py-2 text-sm"
+          className="rounded-md font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center bg-gradient-to-b from-[#ec020d] to-[#9a0008] text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] px-4 py-2 text-sm"
         >
-          Garantir Vaga
+          Garanta Sua Vaga
         </a>
       </div>
     </header>

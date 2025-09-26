@@ -16,10 +16,10 @@ const VideoCTA = () => {
   }, []);
 
   const benefits = [
-    "Networking com +500 empresários",
-    "Estratégias práticas e aplicáveis",
-    "Certificado de participação",
-    "Material de apoio exclusivo"
+    "Conexões Estratégicas com líderes de todos os setores",
+    "Networking Dirigido para construir parcerias",
+    "Engajamento Direto com tomadores de decisão",
+    "Conteúdo de Alto Nível com resultados comprovados"
   ];
 
   const fadeUp: Variants = {
@@ -47,12 +47,12 @@ const VideoCTA = () => {
             custom={0}
             variants={fadeUp}
           >
-            <div className="relative aspect-[9/16] max-w-sm mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700">
+            <div className="relative aspect-square w-full rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700">
               {/* Video Thumbnail Overlay */}
               <div className="absolute inset-0 bg-slate-950/40 flex items-center justify-center">
                 {!isClient ? (
                   // Placeholder durante hidratação
-                  <div className="w-20 h-20 bg-red-500/90 rounded-full flex items-center justify-center">
+                  <div className="w-20 h-20 bg-[#ec020d]/90 rounded-full flex items-center justify-center">
                     <Play className="w-8 h-8 text-white ml-1" fill="white" />
                   </div>
                 ) : !isPlaying ? (
@@ -60,13 +60,13 @@ const VideoCTA = () => {
                     {/* Play Button */}
                     <motion.button
                       onClick={() => setIsPlaying(true)}
-                      className="group relative w-20 h-20 bg-red-500/90 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-red-500"
+                      className="group relative w-20 h-20 bg-[#ec020d]/90 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-[#ec020d]"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                     >
                       <Play className="w-8 h-8 text-white ml-1" fill="white" />
                       {/* Pulse animation */}
-                      <div className="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-30"></div>
+                      <div className="absolute inset-0 rounded-full bg-[#ec020d] animate-ping opacity-30"></div>
                     </motion.button>
 
                     {/* Video Preview */}
@@ -77,7 +77,7 @@ const VideoCTA = () => {
                       autoPlay
                       preload="metadata"
                     >
-                      <source src="/energia-contagiante-da-imersão-máquina-de-resultados-2024.mp4" type="video/mp4" />
+                      <source src="/ig_video_1758894454.mp4" type="video/mp4" />
                     </video>
                   </>
                 ) : (
@@ -88,14 +88,14 @@ const VideoCTA = () => {
                     muted
                     loop
                   >
-                    <source src="/energia-contagiante-da-imersão-máquina-de-resultados-2024.mp4" type="video/mp4" />
+                    <source src="/ig_video_1758894454.mp4" type="video/mp4" />
                   </video>
                 )}
               </div>
 
               {/* Decorative corner */}
-              <div className="absolute top-4 left-4 w-20 h-20 border-l-2 border-t-2 border-red-500/30 rounded-tl-lg"></div>
-              <div className="absolute bottom-4 right-4 w-20 h-20 border-r-2 border-b-2 border-red-500/30 rounded-br-lg"></div>
+              <div className="absolute top-4 left-4 w-20 h-20 border-l-2 border-t-2 border-[#ec020d]/30 rounded-tl-lg"></div>
+              <div className="absolute bottom-4 right-4 w-20 h-20 border-r-2 border-b-2 border-[#ec020d]/30 rounded-br-lg"></div>
             </div>
 
           </motion.div>
@@ -107,12 +107,12 @@ const VideoCTA = () => {
             variants={fadeUp}
           >
             <motion.div
-              className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/30 px-4 py-2 rounded-full mb-6"
+              className="inline-flex items-center gap-2 bg-[#ec020d]/10 border border-[#ec020d]/30 px-4 py-2 rounded-full mb-6"
               custom={2}
               variants={fadeUp}
             >
-              <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-              <span className="text-sm text-red-400 font-medium uppercase tracking-wider">Vagas Limitadas</span>
+              <div className="w-2 h-2 bg-[#ec020d] rounded-full animate-pulse"></div>
+              <span className="text-sm text-[#ec020d] font-medium uppercase tracking-wider">Vagas Limitadas</span>
             </motion.div>
 
             <motion.h1
@@ -120,9 +120,9 @@ const VideoCTA = () => {
               custom={3}
               variants={fadeUp}
             >
-              Transforme seu negócio em{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600">
-                um só dia
+              Não Assista,{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ec020d] to-[#9a0008]">
+                Faça Parte!
               </span>
             </motion.h1>
 
@@ -131,9 +131,9 @@ const VideoCTA = () => {
               custom={4}
               variants={fadeUp}
             >
-              Participe da maior imersão empresarial do ano. Um dia intenso de aprendizado,
-              conexões estratégicas e insights que vão revolucionar a forma como você
-              conduz seus negócios.
+              Por que apenas assistir ao maior movimento de empresários do estado se você pode ser parte dele?
+              O Espírito Santo já começou a mudar. Agora é a sua vez de se posicionar, assumir o protagonismo
+              e escrever a história junto com a gente.
             </motion.p>
 
             {/* Benefits List */}
@@ -165,9 +165,9 @@ const VideoCTA = () => {
             >
               <Button
                 onClick={openModal}
-                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-6 rounded-xl text-lg font-medium shadow-lg shadow-red-500/25 transition-all duration-300 hover:shadow-xl hover:shadow-red-500/30"
+                className="bg-gradient-to-r from-[#ec020d] to-[#9a0008] hover:from-[#9a0008] hover:to-[#ec020d] text-white px-8 py-6 rounded-xl text-lg font-medium shadow-lg shadow-[#ec020d]/25 transition-all duration-300 hover:shadow-xl hover:shadow-[#ec020d]/30"
               >
-                Garantir minha vaga
+                GARANTA AGORA SUA VAGA
                 <ChevronRight className="w-6 h-6 ml-2" />
               </Button>
 
@@ -176,7 +176,7 @@ const VideoCTA = () => {
                 className="border-gray-700 hover:border-gray-600 text-white px-8 py-6 rounded-xl text-lg bg-transparent"
                 onClick={openModal}
               >
-                Ver ingressos disponíveis
+                Escolher minha experiência
               </Button>
             </motion.div>
 
@@ -186,8 +186,8 @@ const VideoCTA = () => {
               custom={7}
               variants={fadeUp}
             >
-              <span className="text-red-400 font-semibold">Apenas 127 vagas restantes</span> •
-              Evento em <span className="font-semibold">15 de março de 2025</span>
+              <span className="text-[#ec020d] font-semibold">Vagas Limitadas</span> •
+              Evento em <span className="font-semibold">12 de Novembro de 2025</span>
             </motion.p>
           </motion.div>
         </motion.div>
