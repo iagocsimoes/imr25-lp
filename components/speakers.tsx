@@ -10,7 +10,7 @@ const Speakers = () => {
       name: "Wander Miranda",
       role: "Estratégia e Coragem",
       company: "O Código da Coragem",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      image: "/7.jpg",
       bio: "Como transformar dor em estratégia e medo em movimento: Supere seus limites.",
       social: {
         linkedin: "#",
@@ -22,7 +22,7 @@ const Speakers = () => {
       name: "Marral Lage",
       role: "Faturamento Bilionário",
       company: "Estratégias Avançadas",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+      image: "/3.png",
       bio: "O que muda na mentalidade de quem sai dos milhões e chega ao bilhão: Pense grande.",
       social: {
         linkedin: "#",
@@ -30,21 +30,10 @@ const Speakers = () => {
       }
     },
     {
-      name: "Marcelo Coelho",
-      role: "Gestão Afinada",
-      company: "Liderança Criativa",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
-      bio: "O que o jazz ensina sobre liderança, sintonia e improviso: Lidere com maestria.",
-      social: {
-        linkedin: "#",
-        website: "#"
-      }
-    },
-    {
       name: "Vitor Escocard",
       role: "Networking Milionário",
       company: "Conexões Estratégicas",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop",
+      image: "/9.png",
       bio: "Como gerar conexões que se transformam em crescimento real: Amplie sua rede.",
       social: {
         instagram: "#",
@@ -52,10 +41,33 @@ const Speakers = () => {
       }
     },
     {
+      name: "Thammy",
+      role: "Estratégia e Liderança",
+      company: "Transformação Empresarial",
+      image: "/1.jpg",
+      bio: "Como transformar desafios em oportunidades de crescimento empresarial.",
+      social: {
+        linkedin: "#",
+        instagram: "#",
+        website: "#"
+      }
+    },
+    {
+      name: "Marcelo Coelho",
+      role: "Gestão Afinada",
+      company: "Liderança Criativa",
+      image: "/2.png",
+      bio: "O que o jazz ensina sobre liderança, sintonia e improviso: Lidere com maestria.",
+      social: {
+        linkedin: "#",
+        website: "#"
+      }
+    },
+    {
       name: "Gustavo Fonseca",
       role: "Estratégias Jurídicas",
       company: "Blindagem Empresarial",
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
+      image: "/5.jpg",
       bio: "Como tomar decisões estratégicas com segurança jurídica: Proteja seu negócio.",
       social: {
         linkedin: "#",
@@ -67,7 +79,7 @@ const Speakers = () => {
       name: "Raphael Ruffo",
       role: "Liderança sem Filtro",
       company: "Conduzir na Pressão",
-      image: "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?w=400&h=400&fit=crop",
+      image: "/8.png",
       bio: "Como sair do modo 'apagador de incêndios' e virar líder de verdade: Seja proativo.",
       social: {
         linkedin: "#"
@@ -125,7 +137,7 @@ const Speakers = () => {
                     src={speaker.image}
                     alt={speaker.name}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <div className="flex-1">

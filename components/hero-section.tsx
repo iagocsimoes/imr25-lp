@@ -23,17 +23,111 @@ const HeroSection = () => {
           <span className="text-red-600">Transformação Empresarial</span>
         </motion.h1>
 
-        {/* Subtítulo */}
-        <motion.h3
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
-          className="text-gray-100/80 text-xl max-sm:text-base max-w-[1000px] max-sm:max-w-full text-center mt-8 max-sm:mt-4"
+        {/* Subtítulo com Bullet Points Premium */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="mt-8 max-sm:mt-6 max-w-[1100px] mx-auto"
         >
-          Prepare-se para Liderar a Revolução! Chegou a hora de posicionar sua marca onde os <br />
-          verdadeiros empresários estão, liderando a transformação do Espírito Santo. O IMR25 não é <br />
-          apenas um evento; é um movimento para homens e mulheres que se preparam para vencer.
-        </motion.h3>
+          {/* Container principal com borda sutil */}
+          <div className="relative">
+            {/* Glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-600/5 to-transparent blur-3xl"></div>
+
+            {/* Grid de features */}
+            <div className="relative grid md:grid-cols-3 gap-4 max-sm:gap-3 px-4">
+
+              {/* Feature 1 */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                className="group relative"
+              >
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-gradient-to-r from-white/[0.02] to-transparent border border-white/[0.05] hover:border-red-600/20 transition-all duration-300">
+                  {/* Ícone estilizado */}
+                  <div className="relative mt-1">
+                    <div className="absolute inset-0 bg-red-600 rounded-full blur-md opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="relative w-2 h-2 bg-gradient-to-br from-red-400 to-red-600 rounded-full"></div>
+                  </div>
+
+                  {/* Texto */}
+                  <div className="flex-1">
+                    <h4 className="text-white font-semibold text-base max-sm:text-sm mb-1">
+                      Posicionamento Estratégico
+                    </h4>
+                    <p className="text-gray-400 text-sm max-sm:text-xs leading-relaxed">
+                      Coloque sua marca onde os verdadeiros líderes estão
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Feature 2 */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className="group relative"
+              >
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-gradient-to-r from-white/[0.02] to-transparent border border-white/[0.05] hover:border-red-600/20 transition-all duration-300">
+                  {/* Ícone estilizado */}
+                  <div className="relative mt-1">
+                    <div className="absolute inset-0 bg-red-600 rounded-full blur-md opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="relative w-2 h-2 bg-gradient-to-br from-red-400 to-red-600 rounded-full"></div>
+                  </div>
+
+                  {/* Texto */}
+                  <div className="flex-1">
+                    <h4 className="text-white font-semibold text-base max-sm:text-sm mb-1">
+                      Transformação Real
+                    </h4>
+                    <p className="text-gray-400 text-sm max-sm:text-xs leading-relaxed">
+                      Lidere a revolução empresarial do Espírito Santo
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Feature 3 */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className="group relative"
+              >
+                <div className="flex items-start gap-3 p-4 rounded-xl bg-gradient-to-r from-white/[0.02] to-transparent border border-white/[0.05] hover:border-red-600/20 transition-all duration-300">
+                  {/* Ícone estilizado */}
+                  <div className="relative mt-1">
+                    <div className="absolute inset-0 bg-red-600 rounded-full blur-md opacity-50 group-hover:opacity-100 transition-opacity"></div>
+                    <div className="relative w-2 h-2 bg-gradient-to-br from-red-400 to-red-600 rounded-full"></div>
+                  </div>
+
+                  {/* Texto */}
+                  <div className="flex-1">
+                    <h4 className="text-white font-semibold text-base max-sm:text-sm mb-1">
+                      Movimento de Vencedores
+                    </h4>
+                    <p className="text-gray-400 text-sm max-sm:text-xs leading-relaxed">
+                      Junte-se a quem se prepara para conquistar o sucesso
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Tagline central */}
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              className="text-center mt-6 text-gray-300/60 text-sm max-sm:text-xs uppercase tracking-wider"
+            >
+              IMR25 • O evento que define o futuro dos negócios
+            </motion.p>
+          </div>
+        </motion.div>
 
         {/* Botões */}
         <motion.div

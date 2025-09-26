@@ -107,14 +107,31 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
     }
   ]
 
+  const ticketLinks: Record<string, string> = {
+    black: 'https://clkdmg.site/pay/blackimr',
+    gold: 'https://clkdmg.site/pay/goldimr',
+    vip: 'https://clkdmg.site/pay/imrvip'
+  }
+
+  const packageLinks: Record<string, string> = {
+    platinum: 'https://clkdmg.site/pay/pacote-platinum',
+    diamond: 'https://clkdmg.site/pay/pacote-diamond'
+  }
+
   const handleTicketSelect = (ticket: typeof tickets[0]) => {
-    openWhatsApp(`Olá! Quero garantir meu ${ticket.name} para o IMR25. Podem me enviar mais detalhes?`)
-    onClose()
+    const link = ticketLinks[ticket.id]
+    if (link) {
+      window.open(link, '_blank')
+      onClose()
+    }
   }
 
   const handlePackageSelect = (pkg: typeof packages[0]) => {
-    openWhatsApp(`Olá! Tenho interesse no ${pkg.name} para o IMR25. Podem me enviar mais informações sobre esse pacote?`)
-    onClose()
+    const link = packageLinks[pkg.id]
+    if (link) {
+      window.open(link, '_blank')
+      onClose()
+    }
   }
 
   return (

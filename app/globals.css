@@ -215,3 +215,12 @@
 .animate-border-spin {
   animation: border-spin 4s linear infinite;
 }
+
+/* Animation delays for bullet points */
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}

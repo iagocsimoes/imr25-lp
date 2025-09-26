@@ -116,17 +116,19 @@ const Plans = () => {
                 </div>
               </div>
 
-              <Button
-                onClick={() =>
-                  openWhatsApp(
-                    'Olá! Quero garantir meu Ingresso BLACK para o IMR25. Podem me enviar mais detalhes?',
-                  )
-                }
-                className="w-full bg-gray-800/50 hover:bg-gray-700/50 text-white rounded-lg py-3 border border-gray-700 transition-all duration-300 hover:border-gray-600"
+              <a
+                href="https://clkdmg.site/pay/blackimr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                Garantir Ingresso BLACK
-                <ChevronRight className="w-5 h-5 ml-2" />
-              </Button>
+                <Button
+                  className="w-full bg-gray-800/50 hover:bg-gray-700/50 text-white rounded-lg py-3 border border-gray-700 transition-all duration-300 hover:border-gray-600"
+                >
+                  Garantir Ingresso BLACK
+                  <ChevronRight className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
             </div>
           </div>
         </motion.div>
@@ -185,17 +187,19 @@ const Plans = () => {
                 </div>
               </div>
 
-              <Button
-                onClick={() =>
-                  openWhatsApp(
-                    'Olá! Quero garantir meu Ingresso GOLD para o IMR25. Podem me enviar mais detalhes?',
-                  )
-                }
-                className="w-full bg-yellow-900/30 hover:bg-yellow-900/50 text-white rounded-lg py-3 border border-yellow-800/50 transition-all duration-300 hover:border-yellow-700/50"
+              <a
+                href="https://clkdmg.site/pay/goldimr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                Garantir Ingresso GOLD
-                <ChevronRight className="w-5 h-5 ml-2" />
-              </Button>
+                <Button
+                  className="w-full bg-yellow-900/30 hover:bg-yellow-900/50 text-white rounded-lg py-3 border border-yellow-800/50 transition-all duration-300 hover:border-yellow-700/50"
+                >
+                  Garantir Ingresso GOLD
+                  <ChevronRight className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
             </div>
           </div>
         </motion.div>
@@ -261,17 +265,19 @@ const Plans = () => {
                 </div>
               </div>
 
-              <Button
-                onClick={() =>
-                  openWhatsApp(
-                    'Olá! Quero garantir meu Ingresso VIP para o IMR25. Podem me enviar mais detalhes?',
-                  )
-                }
-                className="w-full bg-gradient-to-r from-[#ec020d]/80 to-[#9a0008]/80 hover:from-[#ec020d] hover:to-[#9a0008] text-white rounded-lg py-3 border border-[#ec020d]/50 transition-all duration-300 hover:border-[#ec020d] shadow-lg hover:shadow-[#ec020d]/25"
+              <a
+                href="https://clkdmg.site/pay/imrvip"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                Garantir Ingresso VIP
-                <ChevronRight className="w-5 h-5 ml-2" />
-              </Button>
+                <Button
+                  className="w-full bg-gradient-to-r from-[#ec020d]/80 to-[#9a0008]/80 hover:from-[#ec020d] hover:to-[#9a0008] text-white rounded-lg py-3 border border-[#ec020d]/50 transition-all duration-300 hover:border-[#ec020d] shadow-lg hover:shadow-[#ec020d]/25"
+                >
+                  Garantir Ingresso VIP
+                  <ChevronRight className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
             </div>
           </div>
         </motion.div>
