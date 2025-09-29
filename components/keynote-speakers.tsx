@@ -122,7 +122,7 @@ const KeynoteSpeakers = () => {
                     <div className="mb-6">
                       <div className="text-5xl text-[#ec020d]/10 font-serif leading-none">&ldquo;</div>
                       <p className="text-white/90 text-lg italic -mt-6 ml-3 leading-relaxed">
-                        Do Zero aos 500 Milhões de Reais de Faturamento: Estratégias que Fazem o Caixa Crescer
+                        500 Milhões de Reais de Faturamento: Estratégias que Fazem o Caixa Crescer
                       </p>
                     </div>
 
