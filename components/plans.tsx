@@ -153,7 +153,6 @@ const Plans = () => {
                     'Acesso ao setor central (cadeira e mesa)',
                     'Acesso total ao conteúdo do evento',
                     'Almoço incluído',
-                    'Networking Experience'
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <div className="w-1 h-1 bg-yellow-400 rounded-full mt-2"></div>
@@ -226,12 +225,11 @@ const Plans = () => {
                 <div className="space-y-4">
                   {[
                     'Acesso ao VIP Lounge (cadeira e mesa)',
+                    'Acesso total ao conteúdo do evento',
                     'Café da manhã incluído',
                     'Almoço incluído',
                     'Mesa gastronômica e serviço de garçom',
-                    'Acesso total ao conteúdo do evento',
                     'Networking Experience com Lásaro do Carmo',
-                    'Happy hour exclusivo'
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <div className="w-1 h-1 bg-[#ec020d] rounded-full mt-2"></div>

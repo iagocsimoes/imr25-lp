@@ -9,9 +9,9 @@ export default function FAQ() {
 
   const faqData = [
     {
-      question: 'Quando e onde será o Encontro da Elite?',
+      question: 'Quando e onde será o IMR25?',
       answer:
-        'O evento acontecerá no dia 12 de novembro de 2025, em Vitória/ES. O local exato será informado após a confirmação da inscrição.',
+        'O evento acontecerá no dia 12 de novembro de 2025, em Vitória/ES. No Ilha Buffet das 08:00h as 23:00h.',
     },
     {
       question: 'Qual é a diferença entre os ingressos Black, Gold e VIP?',

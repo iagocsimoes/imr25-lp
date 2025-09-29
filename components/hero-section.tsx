@@ -194,20 +194,7 @@ const HeroSection = () => {
               GARANTA SUA VAGA
             </motion.button>
 
-            <motion.a
-              href="http://wa.me/+5527996417399"
-              target="_blank"
-              rel="noopener noreferrer"
-              variants={{
-                hidden: { opacity: 0, y: 20, scale: 0.95 },
-                visible: { opacity: 1, y: 0, scale: 1 },
-              }}
-              transition={{ duration: 0.5, ease: 'easeOut' }}
-              className="text-gray-300 hover:text-white text-sm max-sm:text-xs underline underline-offset-4 transition-colors duration-200 cursor-pointer"
-              style={{ fontFamily: 'SK-Modernist, sans-serif' }}
-            >
-              Desejo ser patrocinador
-            </motion.a>
+
           </motion.div>
         </div>
       </section>

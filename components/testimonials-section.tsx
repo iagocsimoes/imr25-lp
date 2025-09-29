@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
     {
       id: 2,
       name: "Arthur Galvão",
-      role: "Mentor de posicionamento de marca",
+      role: "Fundador - Alta Marca",
       content: "Investi na Enjoy e tive ROI de 13,88x a partir das conexões feitas no movimento da Enjoy.",
       icon: TrendingUp,
       gradient: "from-[#9a0008]/20 to-[#ec020d]/10",
