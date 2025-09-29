@@ -63,7 +63,7 @@ const BentoGrid = () => {
       icon: Globe,
       gradient: "from-[#ec020d]/10 to-[#9a0008]/5",
       size: "col-span-2 row-span-1",
-      stats: "7+",
+      stats: "9",
       statsLabel: "Mentores"
     },
     {

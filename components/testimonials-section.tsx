@@ -2,16 +2,18 @@
 
 import { motion } from 'framer-motion'
 import { Quote, TrendingUp, Target } from 'lucide-react'
+import Image from 'next/image'
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Andressa",
+      name: "Andressa Keller",
       role: "Empresária",
       content: "Alcancei minha meta em 1/3 do tempo e realizei o sonho do apartamento em 6 meses (previsão era 4 anos). A Enjoy distorce o tempo.",
       icon: Target,
-      gradient: "from-[#ec020d]/20 to-[#9a0008]/10"
+      gradient: "from-[#ec020d]/20 to-[#9a0008]/10",
+      image: "/Andressa Keller.jpg"
     },
     {
       id: 2,
@@ -19,7 +21,8 @@ const TestimonialsSection = () => {
       role: "Empresário",
       content: "Investi na Enjoy e tive ROI de 13,88x a partir das conexões feitas no movimento da Enjoy.",
       icon: TrendingUp,
-      gradient: "from-[#9a0008]/20 to-[#ec020d]/10"
+      gradient: "from-[#9a0008]/20 to-[#ec020d]/10",
+      image: "/foto arthur galvão.png"
     }
   ]
 
@@ -81,9 +84,20 @@ const TestimonialsSection = () => {
 
                 {/* Author info */}
                 <div className="flex items-center justify-between">
-                  <div>
-                    <h4 className="text-white font-semibold text-lg">{testimonial.name}</h4>
-                    <p className="text-gray-400 text-sm">{testimonial.role}</p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-full overflow-hidden bg-gray-800">
+                      <Image
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        width={48}
+                        height={48}
+                        className={`w-full h-full ${testimonial.name === 'Arthur Galvão' ? 'object-top' : 'object-cover'}`}
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold text-lg">{testimonial.name}</h4>
+                      <p className="text-gray-400 text-sm">{testimonial.role}</p>
+                    </div>
                   </div>
                   <testimonial.icon className="w-8 h-8 text-[#ec020d] opacity-50" />
                 </div>

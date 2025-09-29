@@ -14,7 +14,7 @@ const HeroSection = () => {
         {/* Banner image as background - Desktop */}
         <div className="absolute inset-0 z-0 hidden sm:block">
           <Image
-            src="/FOTOFUNDO.png"
+            src="/fundo landing page.png"
             alt="IMR25 Banner"
             fill
             priority
@@ -31,7 +31,7 @@ const HeroSection = () => {
         {/* Banner image as background - Mobile */}
         <div className="absolute inset-0 z-0 block sm:hidden">
           <Image
-            src="/[ENJOY] banner-mobile_imr_set2025.png"
+            src="/fundo landing page.png"
             alt="IMR25 Banner Mobile"
             fill
             priority

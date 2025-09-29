@@ -16,7 +16,7 @@ export default function FAQ() {
     {
       question: 'Qual é a diferença entre os ingressos Black, Gold e VIP?',
       answer:
-        'O Black oferece acesso ao evento com alimentação básica. O Gold inclui almoço e networking exclusivo. O VIP oferece experiência completa com área exclusiva, café da manhã, almoço premium e networking com palestrantes.',
+        'O ingresso Black dá acesso ao setor posterior e ao conteúdo completo do evento. O Gold garante lugar no setor central, com cadeira e mesa, além de incluir almoço e uma experiência de networking com empresários. Já o VIP oferece posição privilegiada no VIP Lounge, com café da manhã, almoço, mesa gastronômica, serviço de garçom, happy hour exclusivo e networking com Lásaro do Carmo. Escolha seu nível de experiência.',
     },
     {
       question: 'O que está incluso no Networking Experience?',
