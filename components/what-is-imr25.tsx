@@ -1,7 +1,8 @@
 'use client'
 
 import { motion, Variants } from 'framer-motion'
-import { Target, TrendingUp, Zap, RefreshCw, CheckCircle2 } from 'lucide-react'
+import { CheckCircle2 } from 'lucide-react'
+import Image from 'next/image'
 
 const WhatIsIMR25 = () => {
   const fadeUp: Variants = {
@@ -15,32 +16,24 @@ const WhatIsIMR25 = () => {
 
   const characteristics = [
     {
-      icon: Target,
       title: "Lideram com Propósito",
       description: "Vá além do lucro e construa um legado",
-      gradient: "from-[#ec020d]/20 via-[#9a0008]/10 to-transparent",
-      iconBg: "bg-gradient-to-br from-[#ec020d] to-[#9a0008]"
+      gradient: "from-[#ec020d]/20 via-[#9a0008]/10 to-transparent"
     },
     {
-      icon: TrendingUp,
       title: "Buscam Sair da Zona de Conforto",
       description: "Desafie o status quo e inove",
-      gradient: "from-[#9a0008]/20 via-[#ec020d]/10 to-transparent",
-      iconBg: "bg-gradient-to-br from-[#9a0008] to-[#ec020d]"
+      gradient: "from-[#9a0008]/20 via-[#ec020d]/10 to-transparent"
     },
     {
-      icon: Zap,
       title: "Estão Prontos para Ouvir Verdades Duras",
       description: "Receba insights diretos e acionáveis",
-      gradient: "from-[#ec020d]/20 via-[#9a0008]/10 to-transparent",
-      iconBg: "bg-gradient-to-br from-[#ec020d] to-[#9a0008]"
+      gradient: "from-[#ec020d]/20 via-[#9a0008]/10 to-transparent"
     },
     {
-      icon: RefreshCw,
       title: "Querem Mudar a Forma como Vendem, Lideram, Gerenciam",
       description: "Transforme suas estratégias e resultados",
-      gradient: "from-[#9a0008]/20 via-[#ec020d]/10 to-transparent",
-      iconBg: "bg-gradient-to-br from-[#9a0008] to-[#ec020d]"
+      gradient: "from-[#9a0008]/20 via-[#ec020d]/10 to-transparent"
     }
   ]
 
@@ -124,13 +117,17 @@ const WhatIsIMR25 = () => {
 
                 {/* Content */}
                 <div className="relative flex items-start gap-5">
-                  {/* Icon with animated background */}
-                  <div className="relative">
-                    <div className={`p-4 rounded-2xl ${item.iconBg} shadow-2xl transform transition-transform duration-300 group-hover:rotate-3`}>
-                      <item.icon className="w-7 h-7 text-white" />
+                  {/* Arrow Icon */}
+                  <div className="relative flex-shrink-0">
+                    <div className="w-12 h-12 relative transform transition-transform duration-300 group-hover:translate-x-2">
+                      <Image
+                        src="/SETA_VERMELHA.png"
+                        alt="Seta"
+                        width={48}
+                        height={48}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
-                    {/* Pulse effect on hover */}
-                    <div className={`absolute inset-0 rounded-2xl ${item.iconBg} animate-ping opacity-20 group-hover:opacity-40`}></div>
                   </div>
 
                   <div className="flex-1">

@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { Award, TrendingUp, Users } from 'lucide-react'
+import { Award, Heart, Briefcase, TrendingUp, Users, Trophy } from 'lucide-react'
 
 const KeynoteSpeakers = () => {
   const speaker = {
@@ -10,17 +10,20 @@ const KeynoteSpeakers = () => {
     role: "Estratégias Financeiras",
     company: "Do Zero a Meio Bilhão",
     image: "/MAT02456-38.jpg",
-    achievements: [
-      { icon: TrendingUp, text: "Do controle ao posicionamento estratégico" },
-      { icon: Users, text: "Finanças com visão de CEO" },
-      { icon: Award, text: "Aconselha as maiores empresas do país" }
+    bulletPoints: [
+      { icon: Award, text: "Empresário e conselheiro com 32 anos de experiência no mercado." },
+      { icon: Heart, text: "O Xodó do Silvio Santos." },
+      { icon: Briefcase, text: "Em 2008, assumiu a presidência da Jequiti Cosméticos e a vice-presidência do Grupo Silvio Santos." },
+      { icon: TrendingUp, text: "Sob sua gestão, o faturamento da Jequiti saltou de R$ 21 milhões (2007) para R$ 520 milhões (2014)." },
+      { icon: Users, text: "O número de consultoras cresceu de 20 mil para 204 mil no mesmo período." },
+      { icon: Trophy, text: "Reconhecido nacionalmente como referência em gestão, crescimento e liderança empresarial." }
     ],
     quote: "Do Zero a Meio Bilhão: Estratégias que Fazem o Caixa Crescer",
-    bio: "O ponto cego que impede empresas boas de crescer: Descubra o que você não está vendo. Finanças com visão de CEO: Do controle ao posicionamento estratégico. Estratégia prática de quem aconselha as maiores empresas do país."
+    bio: "Um dos maiores cases de transformação empresarial do Brasil. Lásaro do Carmo Jr. é a prova viva de que visão estratégica e execução impecável podem multiplicar resultados de forma exponencial."
   }
 
   return (
-    <section className="relative py-24 overflow-hidden bg-slate-950">
+    <section id="speakers" className="relative py-24 overflow-hidden bg-slate-950">
       {/* Elegant Background */}
       <div className="absolute inset-0">
         {/* Gradient Mesh Background */}
@@ -124,25 +127,25 @@ const KeynoteSpeakers = () => {
                     </div>
 
                     {/* Bio */}
-                    <p className="text-[#d8d8d8]/80 text-sm leading-relaxed mb-6">
+                    <p className="text-[#d8d8d8]/90 text-base leading-relaxed mb-6">
                       {speaker.bio}
                     </p>
 
-                    {/* Achievements with better spacing */}
-                    <div className="space-y-4 flex-grow">
-                      {speaker.achievements.map((achievement, i) => (
+                    {/* Bullet Points */}
+                    <div className="space-y-3 flex-grow">
+                      {speaker.bulletPoints.map((item, i) => (
                         <motion.div
                           key={i}
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
                           viewport={{ once: true }}
-                          transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-                          className="flex items-center gap-3 group/item"
+                          transition={{ duration: 0.5, delay: 0.3 + i * 0.05 }}
+                          className="flex items-start gap-3 group/item"
                         >
-                          <div className="w-10 h-10 rounded-xl bg-slate-800/50 backdrop-blur flex items-center justify-center transition-all duration-300 group-hover/item:bg-[#ec020d]/10">
-                            <achievement.icon className="w-5 h-5 text-[#ec020d] transition-transform duration-300 group-hover/item:scale-110" />
+                          <div className="w-9 h-9 rounded-lg bg-slate-800/50 backdrop-blur flex items-center justify-center transition-all duration-300 group-hover/item:bg-[#ec020d]/10 flex-shrink-0">
+                            <item.icon className="w-4 h-4 text-[#ec020d] transition-transform duration-300 group-hover/item:scale-110" />
                           </div>
-                          <span className="text-white/70 text-sm group-hover/item:text-white/90 transition-colors duration-300">{achievement.text}</span>
+                          <span className="text-white/80 text-sm leading-relaxed group-hover/item:text-white/95 transition-colors duration-300 pt-2">{item.text}</span>
                         </motion.div>
                       ))}
                     </div>

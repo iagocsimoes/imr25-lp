@@ -1,7 +1,6 @@
 'use client'
 
 import ExclusiveBanner from '@/components/exclusive-banner'
-import BackgroundPaths from '@/components/background-paths'
 import Description from '@/components/description'
 import BentoGrid from '@/components/bento-grid'
 import FAQ from '@/components/faq-questions'
@@ -14,7 +13,6 @@ import MyLp from '@/components/my-lp'
 import ParticlesBackground from '@/components/particle-background'
 import Plans from '@/components/plans'
 import Speakers from '@/components/speakers'
-import TestimonialsMarquee from '@/components/testimonials-marquee'
 import VideoCTA from '@/components/video-cta'
 import WhatIsIMR25 from '@/components/what-is-imr25'
 import TicketModal from '@/components/ticket-modal'
@@ -29,7 +27,6 @@ export default function Page() {
     <TicketModalProvider openModal={openModal}>
       <div className="relative bg-slate-950 overflow-hidden">
         <ExclusiveBanner />
-        <BackgroundPaths />
 
         <div className="relative z-50">
           <Header />
@@ -60,14 +57,6 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="relative">
-        <div className="absolute inset-0 z-0">
-          <ParticlesBackground />
-        </div>
-        <div className="relative z-10">
-          <TestimonialsMarquee />
-        </div>
-      </div>
 
       <div className="w-full relative bg-[url('/bgplans.png')] bg-cover bg-center">
         {/* Color overlay for red/blue tint */}

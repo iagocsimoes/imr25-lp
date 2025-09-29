@@ -8,8 +8,13 @@ const skModernist = {
 }
 
 export const metadata: Metadata = {
-  title: 'Wider Digital',
-  description: 'Agencia de criação de landing pages',
+  title: 'IMR 2025',
+  description: 'O Chamado para a Transformação Empresarial',
+  icons: {
+    icon: '/logo imr.png',
+    shortcut: '/logo imr.png',
+    apple: '/logo imr.png',
+  },
 }
 
 export default function RootLayout({

@@ -1,10 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { Linkedin, Instagram, Globe } from "lucide-react";
 import { motion, Variants } from "framer-motion";
+import { Info } from "lucide-react";
+import { useState } from "react";
 
 const Speakers = () => {
+  const [hoveredSpeaker, setHoveredSpeaker] = useState<number | null>(null);
+
   const speakers = [
     {
       name: "Wander Miranda",
@@ -12,11 +15,7 @@ const Speakers = () => {
       company: "O Código da Coragem",
       image: "/7.jpg",
       bio: "Como transformar dor em estratégia e medo em movimento: Supere seus limites.",
-      social: {
-        linkedin: "#",
-        instagram: "#",
-        website: "#"
-      }
+      about: "Wander Miranda é fundador e CEO da Enjoy Educação, escola de negócios para empresários que está transformando o cenário empresarial capixaba. É autor do livro Máquina de Resultados e idealizador da maior imersão de performance empresarial do ES (IMR). Sua missão é provocar empresários a crescerem com visão, gestão e coragem para fazer diferente."
     },
     {
       name: "Marral Lage",
@@ -24,10 +23,7 @@ const Speakers = () => {
       company: "Estratégias Avançadas",
       image: "/3.png",
       bio: "O que muda na mentalidade de quem sai dos milhões e chega ao bilhão: Pense grande.",
-      social: {
-        linkedin: "#",
-        instagram: "#"
-      }
+      about: "Marral Laje é empresário capixaba e fundador do Grupo Multicar, referência no setor automotivo no Espírito Santo. De espírito empreendedor, construiu sua trajetória sempre em busca de inovação e crescimento sustentável. Marral é reconhecido por sua visão estratégica, pela forma próxima de liderar e pela capacidade de transformar desafios em oportunidades de negócios."
     },
     {
       name: "Vitor Escocard",
@@ -35,22 +31,15 @@ const Speakers = () => {
       company: "Conexões Estratégicas",
       image: "/9.png",
       bio: "Como gerar conexões que se transformam em crescimento real: Amplie sua rede.",
-      social: {
-        instagram: "#",
-        website: "#"
-      }
+      about: "Vitor Escocard é engenheiro de produção, mestre em Engenharia de Produção e possui MBAs em Finanças, Controladoria e Marketing. Iniciou a carreira no mercado financeiro e, em 2014, fundou a ORION, master franquia da Prudential do Brasil. Com mais de 4.700 apólices sob gestão, foi reconhecido 12 vezes internacionalmente e chegou ao topo da Times Square. Atua também como sócio-investidor em empresas de diferentes setores."
     },
     {
-      name: "Thammy",
+      name: "Thammy Manuella",
       role: "Estratégia e Liderança",
       company: "Transformação Empresarial",
       image: "/1.jpg",
       bio: "Como transformar desafios em oportunidades de crescimento empresarial.",
-      social: {
-        linkedin: "#",
-        instagram: "#",
-        website: "#"
-      }
+      about: "Thammy Manuella é especialista em marketing e vendas, com mais de uma década de atuação no mercado. Ela desenvolveu métodos próprios focados em alta conversão e estratégias para transformar propostas em resultados. Com presença marcante nas redes sociais, ela divide experiências reais, provoca mentalidades e ensina a construir vendas sustentáveis sem depender de promessas vazias."
     },
     {
       name: "Marcelo Coelho",
@@ -58,10 +47,7 @@ const Speakers = () => {
       company: "Liderança Criativa",
       image: "/2.png",
       bio: "O que o jazz ensina sobre liderança, sintonia e improviso: Lidere com maestria.",
-      social: {
-        linkedin: "#",
-        website: "#"
-      }
+      about: "Saxofonista, compositor, pesquisador, palestrante e educador, Marcelo Coelho é referência em jazz no Brasil e no mundo. Com doutorado pela Unicamp e mestrado pela University of Miami, já lançou 10 álbuns e atuou ao lado de artistas como Caetano Veloso. Empreendedor, fundou a Acelerarte e lidera a Plataforma SOM."
     },
     {
       name: "Gustavo Fonseca",
@@ -69,11 +55,7 @@ const Speakers = () => {
       company: "Blindagem Empresarial",
       image: "/5.jpg",
       bio: "Como tomar decisões estratégicas com segurança jurídica: Proteja seu negócio.",
-      social: {
-        linkedin: "#",
-        instagram: "#",
-        website: "#"
-      }
+      about: "Gustavo Fonseca é advogado, empresário e fundador da FASS Advogados, com escritórios em Vitória e São Paulo. Há 20 anos apoia empresas no Brasil e no exterior a crescer, proteger patrimônio e gerar negócios. Mentor e palestrante, conecta técnica jurídica e visão empresarial, além de atuar como investidor."
     },
     {
       name: "Raphael Ruffo",
@@ -81,9 +63,7 @@ const Speakers = () => {
       company: "Conduzir na Pressão",
       image: "/8.png",
       bio: "Como sair do modo 'apagador de incêndios' e virar líder de verdade: Seja proativo.",
-      social: {
-        linkedin: "#"
-      }
+      about: "Raphael Ruffo é empresário e especialista em comunicação e comportamento. Sócio-fundador da Alfaduo Desenvolvimento Humano, empresa de wellness corporativo que transforma cuidado em lucro. Ele promove ambientes de trabalho mais saudáveis. Mentor de empresários, conduz jornadas de performance e propósito."
     }
   ];
 
@@ -121,12 +101,12 @@ const Speakers = () => {
         {speakers.map((speaker, index) => (
           <motion.div
             key={index}
-            className="group relative bg-gradient-to-b from-gray-900/50 to-gray-900/20 backdrop-blur-sm rounded-2xl border border-gray-800 hover:border-gray-700 transition-all duration-500 overflow-hidden"
+            className="group relative bg-gradient-to-b from-gray-900/50 to-gray-900/20 backdrop-blur-sm rounded-2xl border border-gray-800 hover:border-gray-700 transition-all duration-500 overflow-visible"
             custom={index}
             variants={fadeUp}
           >
             {/* Glow effect on hover */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#ec020d]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#ec020d]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
 
             <div className="relative p-6 max-sm:p-4">
               {/* Image and Info */}
@@ -154,38 +134,39 @@ const Speakers = () => {
               </div>
 
               {/* Bio */}
-              <p className="text-sm text-gray-300 mb-4 leading-relaxed">
+              <p className="text-sm text-gray-300 leading-relaxed mb-4">
                 {speaker.bio}
               </p>
 
-              {/* Social Links */}
-              <div className="flex gap-3">
-                {speaker.social.linkedin && (
-                  <a
-                    href={speaker.social.linkedin}
-                    className="w-8 h-8 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 flex items-center justify-center transition-colors"
-                    aria-label={`LinkedIn de ${speaker.name}`}
+              {/* Who is button with tooltip */}
+              <div className="relative">
+                <button
+                  onClick={() => setHoveredSpeaker(hoveredSpeaker === index ? null : index)}
+                  onMouseEnter={() => window.innerWidth > 768 && setHoveredSpeaker(index)}
+                  onMouseLeave={() => window.innerWidth > 768 && setHoveredSpeaker(null)}
+                  className="flex items-center gap-2 text-sm text-red-400 hover:text-red-300 transition-colors"
+                >
+                  <Info className="w-4 h-4" />
+                  <span>Quem é?</span>
+                </button>
+
+                {/* Tooltip */}
+                {hoveredSpeaker === index && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 5 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 5 }}
+                    className="absolute bottom-full left-0 mb-2 w-80 max-sm:w-72 p-4 bg-gray-900 border border-gray-700 rounded-lg shadow-xl z-[9999]"
+                    style={{
+                      maxHeight: '300px',
+                      overflowY: 'auto'
+                    }}
                   >
-                    <Linkedin className="w-4 h-4 text-gray-400" />
-                  </a>
-                )}
-                {speaker.social.instagram && (
-                  <a
-                    href={speaker.social.instagram}
-                    className="w-8 h-8 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 flex items-center justify-center transition-colors"
-                    aria-label={`Instagram de ${speaker.name}`}
-                  >
-                    <Instagram className="w-4 h-4 text-gray-400" />
-                  </a>
-                )}
-                {speaker.social.website && (
-                  <a
-                    href={speaker.social.website}
-                    className="w-8 h-8 rounded-lg bg-gray-800/50 hover:bg-gray-700/50 flex items-center justify-center transition-colors"
-                    aria-label={`Website de ${speaker.name}`}
-                  >
-                    <Globe className="w-4 h-4 text-gray-400" />
-                  </a>
+                    <div className="absolute -bottom-1 left-4 w-2 h-2 bg-gray-900 border-r border-b border-gray-700 transform rotate-45"></div>
+                    <p className="text-xs text-gray-300 leading-relaxed">
+                      {speaker.about}
+                    </p>
+                  </motion.div>
                 )}
               </div>
             </div>

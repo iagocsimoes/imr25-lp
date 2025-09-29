@@ -1,19 +1,79 @@
 "use client";
 
-import { Play, ChevronRight, CheckCircle } from "lucide-react";
+import { Play, ChevronRight, CheckCircle, Volume2, VolumeX } from "lucide-react";
 import { Button } from "./ui/button";
 import { useTicketModalContext } from '@/contexts/ticket-modal-context'
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 
 const VideoCTA = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isClient, setIsClient] = useState(false);
+  const [isMuted, setIsMuted] = useState(true); // Sempre inicia mutado para evitar problemas de hidratação
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const { openModal } = useTicketModalContext()
 
   useEffect(() => {
     setIsClient(true);
   }, []);
+
+  // Intersection Observer para detectar quando o vídeo está visível
+  useEffect(() => {
+    if (!isClient) return;
+
+    const container = containerRef.current;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsPlaying(true);
+            // Auto-play quando entra na viewport
+            if (videoRef.current) {
+              videoRef.current.play().catch(err => {
+                // Se falhar com som, tenta mutado
+                console.log("Autoplay failed, trying muted:", err);
+                setIsMuted(true);
+                videoRef.current?.play();
+              });
+              // Desmuta após 100ms se o usuário não interagiu
+              setTimeout(() => {
+                if (videoRef.current && isMuted) {
+                  setIsMuted(false);
+                  videoRef.current.muted = false;
+                }
+              }, 100);
+            }
+          } else {
+            // Pausa quando sai da viewport
+            if (videoRef.current) {
+              videoRef.current.pause();
+            }
+          }
+        });
+      },
+      { threshold: 0.5 } // Trigger quando 50% do vídeo está visível
+    );
+
+    if (container) {
+      observer.observe(container);
+    }
+
+    return () => {
+      if (container) {
+        observer.unobserve(container);
+      }
+    };
+  }, [isClient, isMuted]);
+
+  const toggleMute = () => {
+    setIsMuted(!isMuted);
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+    }
+  };
 
   const benefits = [
     "Conexões Estratégicas com líderes de todos os setores",
@@ -41,26 +101,53 @@ const VideoCTA = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
 
-          {/* Video Section */}
+          {/* Video Section - Order changed for mobile */}
           <motion.div
-            className="relative flex-1 order-2 md:order-1"
+            className="relative flex-1 order-1 md:order-1 max-sm:order-2"
             custom={0}
             variants={fadeUp}
+            ref={containerRef}
           >
             <div className="relative aspect-square w-full rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700">
-              {/* Video Thumbnail Overlay */}
-              <div className="absolute inset-0 bg-slate-950/40 flex items-center justify-center">
-                {!isClient ? (
-                  // Placeholder durante hidratação
-                  <div className="w-20 h-20 bg-[#ec020d]/90 rounded-full flex items-center justify-center">
-                    <Play className="w-8 h-8 text-white ml-1" fill="white" />
-                  </div>
-                ) : !isPlaying ? (
-                  <>
+              {/* Video Container */}
+              <div className="relative w-full h-full">
+                {/* Poster Image as fallback */}
+                {typeof window === 'undefined' && (
+                  <Image
+                    src="/MAT02456-38.jpg"
+                    alt="Video poster"
+                    fill
+                    className="object-cover"
+                  />
+                )}
+
+                {/* Video element - only on client */}
+                {typeof window !== 'undefined' && (
+                  <video
+                    ref={videoRef}
+                    className="w-full h-full object-cover"
+                    muted={isMuted}
+                    loop
+                    playsInline
+                    preload="metadata"
+                    poster="/MAT02456-38.jpg"
+                  >
+                    <source src="/ig_video_1758894454.mp4" type="video/mp4" />
+                  </video>
+                )}
+
+                {/* Dark overlay for better button visibility */}
+                {!isPlaying && (
+                  <div className="absolute inset-0 bg-slate-950/60 flex items-center justify-center">
                     {/* Play Button */}
                     <motion.button
-                      onClick={() => setIsPlaying(true)}
-                      className="group relative w-20 h-20 bg-[#ec020d]/90 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-[#ec020d]"
+                      onClick={() => {
+                        setIsPlaying(true);
+                        if (videoRef.current) {
+                          videoRef.current.play();
+                        }
+                      }}
+                      className="group relative w-20 h-20 bg-[#ec020d]/90 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:bg-[#ec020d] z-10"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
                     >
@@ -68,41 +155,38 @@ const VideoCTA = () => {
                       {/* Pulse animation */}
                       <div className="absolute inset-0 rounded-full bg-[#ec020d] animate-ping opacity-30"></div>
                     </motion.button>
+                  </div>
+                )}
 
-                    {/* Video Preview */}
-                    <video
-                      className="absolute inset-0 w-full h-full object-cover"
-                      muted
-                      loop
-                      autoPlay
-                      preload="metadata"
-                    >
-                      <source src="/ig_video_1758894454.mp4" type="video/mp4" />
-                    </video>
-                  </>
-                ) : (
-                  <video
-                    className="absolute inset-0 w-full h-full object-cover"
-                    controls
-                    autoPlay
-                    muted
-                    loop
+                {/* Mute/Unmute Button - Always visible when playing */}
+                {isClient && isPlaying && (
+                  <motion.button
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    onClick={toggleMute}
+                    className="absolute top-4 right-4 w-12 h-12 bg-black/60 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 hover:bg-black/80 z-20"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
                   >
-                    <source src="/ig_video_1758894454.mp4" type="video/mp4" />
-                  </video>
+                    {isMuted ? (
+                      <VolumeX className="w-6 h-6 text-white" />
+                    ) : (
+                      <Volume2 className="w-6 h-6 text-white" />
+                    )}
+                  </motion.button>
                 )}
               </div>
 
               {/* Decorative corner */}
-              <div className="absolute top-4 left-4 w-20 h-20 border-l-2 border-t-2 border-[#ec020d]/30 rounded-tl-lg"></div>
-              <div className="absolute bottom-4 right-4 w-20 h-20 border-r-2 border-b-2 border-[#ec020d]/30 rounded-br-lg"></div>
+              <div className="absolute top-4 left-4 w-20 h-20 border-l-2 border-t-2 border-[#ec020d]/30 rounded-tl-lg pointer-events-none"></div>
+              <div className="absolute bottom-4 right-4 w-20 h-20 border-r-2 border-b-2 border-[#ec020d]/30 rounded-br-lg pointer-events-none"></div>
             </div>
 
           </motion.div>
 
-          {/* Content Section */}
+          {/* Content Section - Order changed for mobile */}
           <motion.div
-            className="flex-1 order-1 md:order-2"
+            className="flex-1 order-2 md:order-2 max-sm:order-1"
             custom={1}
             variants={fadeUp}
           >

@@ -139,8 +139,8 @@ const Metrics = () => {
           </div>
 
           <div className="flex items-start flex-col gap-2 -mt-24">
-            <h2 className="text-7xl font-medium">12</h2>
-            <span className="font-medium text-lg">de Novembro - Dia intenso de imersão</span>
+            <h2 className="text-7xl font-medium"></h2>
+            <span className="font-medium text-lg">Network Experience + Banda (Show)</span>
           </div>
         </motion.div>
 
@@ -248,64 +248,6 @@ const Metrics = () => {
             </motion.div>
           ))}
         </div>
-      </motion.div>
-
-      {/* Palestrantes */}
-      <motion.div
-        className="mt-32 max-sm:mt-20"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <motion.h2
-          className="text-3xl max-sm:text-2xl text-white font-medium text-center mb-16 max-sm:mb-12"
-          custom={0}
-          variants={fadeUp}
-        >
-          Palestrantes
-        </motion.h2>
-
-        {/* Desktop Grid */}
-        <motion.div
-          className="grid grid-cols-3 gap-8 max-sm:hidden"
-          custom={1}
-          variants={fadeUp}
-        >
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
-            <div key={num} className="flex flex-col items-center">
-              <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-white mb-4">
-                <Image
-                  src={`/${num}.png`}
-                  alt={`Palestrante ${num}`}
-                  width={128}
-                  height={128}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          ))}
-        </motion.div>
-
-        {/* Mobile Grid */}
-        <motion.div
-          className="hidden max-sm:grid grid-cols-2 gap-6"
-          custom={1}
-          variants={fadeUp}
-        >
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
-            <div key={num} className="flex flex-col items-center">
-              <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-white mb-3">
-                <Image
-                  src={`/${num}.png`}
-                  alt={`Palestrante ${num}`}
-                  width={96}
-                  height={96}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          ))}
-        </motion.div>
       </motion.div>
 
       {/* CTA */}

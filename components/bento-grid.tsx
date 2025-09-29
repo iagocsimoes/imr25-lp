@@ -116,7 +116,7 @@ const BentoGrid = () => {
 
       {/* Bento Grid */}
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto auto-rows-[200px]"
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto auto-rows-[200px] max-sm:auto-rows-[150px]"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
@@ -124,7 +124,7 @@ const BentoGrid = () => {
         {items.map((item, index) => (
           <motion.div
             key={item.id}
-            className={`group relative ${item.size} bg-gradient-to-br from-slate-900/80 to-slate-800/40 backdrop-blur-sm rounded-2xl border border-gray-800/50 transition-all duration-300 overflow-hidden`}
+            className={`group relative ${item.size} max-sm:col-span-1 max-sm:row-span-1 bg-gradient-to-br from-slate-900/80 to-slate-800/40 backdrop-blur-sm rounded-2xl border border-gray-800/50 transition-all duration-300 overflow-hidden`}
             custom={index}
             variants={fadeUp}
           >
@@ -137,22 +137,22 @@ const BentoGrid = () => {
                   secondaryColor="#fbbf24"
                   gridColor="#ffffff05"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-slate-900/90 via-slate-900/60 to-transparent z-20">
-                  <h3 className="text-xl font-semibold text-white mb-2">
+                <div className="absolute bottom-0 left-0 right-0 p-6 max-sm:p-4 bg-gradient-to-t from-slate-900/90 via-slate-900/60 to-transparent z-20">
+                  <h3 className="text-xl max-sm:text-base font-semibold text-white mb-2 max-sm:mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-gray-300 text-sm leading-relaxed">
+                  <p className="text-gray-300 text-sm max-sm:text-xs leading-relaxed max-sm:line-clamp-3">
                     {item.description}
                   </p>
                 </div>
               </div>
             ) : (
-              <div className="relative h-full p-6 flex flex-col justify-between">
+              <div className="relative h-full p-6 max-sm:p-4 flex flex-col justify-between">
               {/* Header */}
               <div>
-                <div className="flex items-start justify-between mb-4">
-                  <div className="p-3 rounded-xl bg-gray-800/50">
-                    <item.icon className="w-6 h-6 text-[#ec020d]" />
+                <div className="flex items-start justify-between mb-4 max-sm:mb-3">
+                  <div className="p-3 max-sm:p-2 rounded-xl bg-gray-800/50">
+                    <item.icon className="w-6 h-6 max-sm:w-5 max-sm:h-5 text-[#ec020d]" />
                   </div>
 
                   {item.stats && (
@@ -162,17 +162,17 @@ const BentoGrid = () => {
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.3 }}
                     >
-                      <div className="text-2xl font-bold text-white">{item.stats}</div>
-                      <div className="text-xs text-gray-400">{item.statsLabel}</div>
+                      <div className="text-2xl max-sm:text-lg font-bold text-white">{item.stats}</div>
+                      <div className="text-xs max-sm:text-[10px] text-gray-400">{item.statsLabel}</div>
                     </motion.div>
                   )}
                 </div>
 
-                <h3 className="text-xl font-semibold text-white mb-2">
+                <h3 className="text-xl max-sm:text-base font-semibold text-white mb-2 max-sm:mb-1">
                   {item.title}
                 </h3>
 
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-400 text-sm max-sm:text-xs leading-relaxed max-sm:line-clamp-3">
                   {item.description}
                 </p>
               </div>

@@ -11,7 +11,7 @@ export default function FAQ() {
     {
       question: 'Quando e onde será o Encontro da Elite?',
       answer:
-        'O evento acontecerá no dia 15 de março de 2025, em Vitória/ES. O local exato será informado após a confirmação da inscrição.',
+        'O evento acontecerá no dia 12 de novembro de 2025, em Vitória/ES. O local exato será informado após a confirmação da inscrição.',
     },
     {
       question: 'Qual é a diferença entre os ingressos Black, Gold e VIP?',
@@ -19,14 +19,14 @@ export default function FAQ() {
         'O Black oferece acesso ao evento com alimentação básica. O Gold inclui almoço e networking exclusivo. O VIP oferece experiência completa com área exclusiva, café da manhã, almoço premium e networking com palestrantes.',
     },
     {
-      question: 'O que está incluído no Networking Experience?',
+      question: 'O que está incluso no Networking Experience?',
       answer:
         'É um momento exclusivo para conexões estratégicas entre empresários participantes. No VIP, inclui também interação direta com o palestrante principal Lásaro do Carmo e happy hour exclusivo.',
     },
     {
       question: 'Como funciona o parcelamento dos ingressos?',
       answer:
-        'Todos os ingressos podem ser parcelados em até 12x sem juros no cartão de crédito, ou pagos à vista com desconto. Entre em contato para mais detalhes sobre formas de pagamento.',
+        'Todos os ingressos podem ser parcelados em até 12x sem juros no cartão de crédito. Entre em contato para mais detalhes sobre formas de pagamento.',
     },
     {
       question: 'Os pacotes para equipes têm desconto?',
@@ -51,7 +51,7 @@ export default function FAQ() {
   }
 
   return (
-    <div className="max-w-6xl z-50 mx-auto px-4 sm:px-6 lg:px-8 text-white mt-12 sm:mt-20 pb-12 sm:pb-20">
+    <div id="faq" className="max-w-6xl z-50 mx-auto px-4 sm:px-6 lg:px-8 text-white mt-12 sm:mt-20 pb-12 sm:pb-20">
       {/* Header */}
       <motion.div
         className="text-center mb-8 sm:mb-12 md:mb-16"
