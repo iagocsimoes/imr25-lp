@@ -33,7 +33,7 @@ const Description = () => {
             className="text-[5rem] max-sm:text-3xl leading-[6rem] max-sm:leading-tight font-semibold text-white max-w-[1000px] max-sm:max-w-full text-start max-sm:text-center"
           >
             O que você vai aprender no{' '}
-            <span className="text-red-600">Encontro da Elite</span>.
+            <span className="text-red-600">Máquina de Resultados</span>.
           </motion.h1>
           <motion.h3
             variants={fadeInUp}
@@ -62,10 +62,10 @@ const Description = () => {
           },
           {
             text: 'Tenha acesso a conteúdo da vida real, prático e direcionado ao médio empresário. Aplique métodos eficientes para otimizar processos e aumentar os resultados da sua empresa.',
-            title: 'Gestão e Metodologias Práticas',
+            title: 'Gestão e Planejamento',
           },
           {
-            text: 'Aprenda a liderar com propósito, dominando a arte de se comunicar com clareza e impacto para engajar seu time de verdade. Eleve o nível da sua gestão e liderança para transformar a performance da sua equipe.',
+            text: 'Aprenda a liderar com propósito, dominando a arte de se comunicar com clareza e impacto para engajar seu time de verdade. Sente-se à mesa com outros empresários que vão somar oportunidades para o seu crescimento.',
             title: 'Liderança e Engajamento',
           },
           {

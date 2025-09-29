@@ -14,7 +14,7 @@ const Speakers = () => {
       role: "Estratégia e Coragem",
       company: "O Código da Coragem",
       image: "/7.jpg",
-      bio: "Como transformar dor em estratégia e medo em movimento: Supere seus limites.",
+      bio: "Saiba como ele superou desafios e críticas e construiu com coragem a mais relevante iniciativa de educação e conexão empresarial do Estado.",
       about: "Wander Miranda é fundador e CEO da Enjoy Educação, escola de negócios para empresários que está transformando o cenário empresarial capixaba. É autor do livro Máquina de Resultados e idealizador da maior imersão de performance empresarial do ES (IMR). Sua missão é provocar empresários a crescerem com visão, gestão e coragem para fazer diferente."
     },
     {
@@ -87,7 +87,7 @@ const Speakers = () => {
         transition={{ duration: 0.6 }}
       >
         <h2 className="text-4xl md:text-5xl lg:text-6xl max-sm:text-3xl font-medium text-white">
-          Conheça todos os palestrantes
+          Conheça todos os mentores
         </h2>
       </motion.div>
 

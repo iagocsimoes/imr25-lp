@@ -7,8 +7,8 @@ import { Award, Heart, Briefcase, TrendingUp, Users, Trophy } from 'lucide-react
 const KeynoteSpeakers = () => {
   const speaker = {
     name: "Lásaro do Carmo Jr.",
-    role: "Estratégias Financeiras",
-    company: "Do Zero a Meio Bilhão",
+    role: "Planejamento Estratégico e Tático + Cultura",
+    company: "500 Milhões de Faturamento",
     image: "/MAT02456-38.jpg",
     bulletPoints: [
       { icon: Award, text: "Empresário e conselheiro com 32 anos de experiência no mercado." },
@@ -18,7 +18,7 @@ const KeynoteSpeakers = () => {
       { icon: Users, text: "O número de consultoras cresceu de 20 mil para 204 mil no mesmo período." },
       { icon: Trophy, text: "Reconhecido nacionalmente como referência em gestão, crescimento e liderança empresarial." }
     ],
-    quote: "Do Zero a Meio Bilhão: Estratégias que Fazem o Caixa Crescer",
+    quote: "Prepare seu ano de 2026 com planejamentos estratégico e tático com um dos melhores do Brasil.",
     bio: "Um dos maiores cases de transformação empresarial do Brasil. Lásaro do Carmo Jr. é a prova viva de que visão estratégica e execução impecável podem multiplicar resultados de forma exponencial."
   }
 
@@ -71,7 +71,7 @@ const KeynoteSpeakers = () => {
             empresas que <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9a0008] to-[#ec020d]">evoluem</span>
           </h3>
           <p className="mt-6 text-lg max-sm:text-base text-[#d8d8d8] max-w-3xl mx-auto">
-            Insights valiosos e estratégias comprovadas para você aplicar imediatamente em seu negócio
+            Prepare seu ano de 2026 com planejamentos estratégico e tático com um dos melhores do Brasil
           </p>
         </motion.div>
 
@@ -122,7 +122,7 @@ const KeynoteSpeakers = () => {
                     <div className="mb-6">
                       <div className="text-5xl text-[#ec020d]/10 font-serif leading-none">&ldquo;</div>
                       <p className="text-white/90 text-lg italic -mt-6 ml-3 leading-relaxed">
-                        {speaker.quote}
+                        Do Zero aos 500 Milhões de Reais de Faturamento: Estratégias que Fazem o Caixa Crescer
                       </p>
                     </div>
 

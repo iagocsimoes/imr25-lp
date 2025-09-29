@@ -2,7 +2,6 @@
 
 import { ChevronRight } from 'lucide-react'
 import { Button } from './ui/button'
-import { useTicketModalContext } from '@/contexts/ticket-modal-context'
 import { motion, Variants } from 'framer-motion'
 
 const fadeUp: Variants = {
@@ -15,7 +14,6 @@ const fadeUp: Variants = {
 }
 
 const Plans = () => {
-  const { openModal } = useTicketModalContext()
   return (
     <div
       id="planos"
@@ -35,25 +33,6 @@ const Plans = () => {
         >
           ESCOLHA SUA EXPERIÊNCIA
         </motion.h1>
-        <motion.div
-          className="bg-[#ec020d]/20 p-2 w-fit mx-auto rounded-full"
-          custom={1}
-          variants={fadeUp}
-        >
-          <Button
-            onClick={() => {
-              openModal();
-              // Set the modal to open on packages tab
-              setTimeout(() => {
-                const packagesTab = document.querySelector('[data-tab="pacotes"]') as HTMLButtonElement;
-                if (packagesTab) packagesTab.click();
-              }, 100);
-            }}
-            className="bg-[#ec020d]/60 hover:bg-[#ec020d] text-white px-8 max-sm:px-6 py-2 rounded-full cursor-pointer max-sm:text-sm"
-          >
-            Ver Pacotes Exclusivos
-          </Button>
-        </motion.div>
       </motion.div>
 
       {/* Pricing Cards - New Futuristic Design */}
@@ -103,8 +82,7 @@ const Plans = () => {
 
                 <div className="space-y-4">
                   {[
-                    'Acesso ao setor posterior (cadeira e mesa)',
-                    'Mesa de frutas',
+                    'Acesso ao setor posterior (cadeiras)',
                     'Acesso total ao conteúdo do evento'
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">

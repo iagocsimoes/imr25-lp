@@ -17,8 +17,8 @@ const BentoGrid = () => {
   const items = [
     {
       id: 1,
-      title: "Transformação Empresarial",
-      description: "Amplie sua visão empresarial e enxergue novas oportunidades de crescimento",
+      title: "Visão Estratégica",
+      description: "Amplie sua visão de negócios e aprenda a identificar oportunidades únicas no mercado",
       icon: TrendingUp,
       gradient: "from-[#ec020d]/20 to-[#9a0008]/10",
       size: "col-span-1 row-span-2",
@@ -28,8 +28,8 @@ const BentoGrid = () => {
     },
     {
       id: 2,
-      title: "Conexões Estratégicas",
-      description: "Relacionamento com líderes empresariais de todos os setores. Networking dirigido para construir parcerias.",
+      title: "Conexões Empresariais",
+      description: "Networking dirigido com líderes empresariais de todos os setores para construir parcerias estratégicas.",
       icon: Users,
       gradient: "from-[#1c1d1c]/20 to-[#1c1d1c]/10",
       size: "col-span-2 row-span-1",
@@ -38,8 +38,8 @@ const BentoGrid = () => {
     },
     {
       id: 3,
-      title: "Conhecimento Prático",
-      description: "Melhore sua liderança e gestão através de metodologias práticas e aplique métodos que otimizam processos.",
+      title: "Mentalidade de Crescimento",
+      description: "Desenvolva uma mentalidade empresarial focada em crescimento exponencial e resultados sustentáveis.",
       icon: Zap,
       gradient: "from-[#9a0008]/20 to-[#ec020d]/10",
       size: "col-span-1 row-span-1",
@@ -48,8 +48,8 @@ const BentoGrid = () => {
     },
     {
       id: 4,
-      title: "Comunicação e Mercado",
-      description: "Estratégias de comunicação e mercado com práticas atuais para vender mais e se destacar.",
+      title: "Motivação e Encorajamento",
+      description: "Encontre a energia e direção para superar desafios e alcançar novos patamares empresariais.",
       icon: Target,
       gradient: "from-[#d8d8d8]/10 to-[#fbfcff]/5",
       size: "col-span-1 row-span-1",
@@ -58,8 +58,8 @@ const BentoGrid = () => {
     },
     {
       id: 5,
-      title: "Abordagem Prática",
-      description: "Conteúdo de alto nível direcionado ao médio empresário. Ambiente de provocação para despertar insights.",
+      title: "Liderança Empresarial",
+      description: "Desenvolva habilidades de liderança para conduzir sua equipe e empresa ao próximo nível de excelência.",
       icon: Globe,
       gradient: "from-[#ec020d]/10 to-[#9a0008]/5",
       size: "col-span-2 row-span-1",
@@ -93,16 +93,16 @@ const BentoGrid = () => {
           variants={fadeUp}
         >
           <Rocket className="w-4 h-4 text-[#ec020d]" />
-          <span className="text-sm text-[#ec020d] font-medium uppercase tracking-wider">O Que Você Vai Acessar</span>
+          <span className="text-sm text-[#ec020d] font-medium uppercase tracking-wider">O Que Você Vai Aprender</span>
         </motion.div>
         <motion.h1
           className="text-4xl md:text-5xl lg:text-7xl max-sm:text-3xl font-medium mb-6 max-sm:mb-4 text-white max-w-[1000px] max-sm:max-w-full text-center mx-auto"
           custom={1}
           variants={fadeUp}
         >
-          Prepare-se para uma experiência que vai{" "}
+          O que você vai aprender no{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ec020d] to-[#9a0008]">
-            além do convencional
+            Encontro Máquina de Resultados
           </span>
         </motion.h1>
         <motion.p

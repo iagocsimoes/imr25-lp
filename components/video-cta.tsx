@@ -5,7 +5,6 @@ import { Button } from "./ui/button";
 import { useTicketModalContext } from '@/contexts/ticket-modal-context'
 import { useState, useEffect, useRef } from "react";
 import { motion, Variants } from "framer-motion";
-import Image from "next/image";
 
 const VideoCTA = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -109,30 +108,18 @@ const VideoCTA = () => {
             <div className="relative aspect-square w-full rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700">
               {/* Video Container */}
               <div className="relative w-full h-full">
-                {/* Poster Image as fallback */}
-                {typeof window === 'undefined' && (
-                  <Image
-                    src="/MAT02456-38.jpg"
-                    alt="Video poster"
-                    fill
-                    className="object-cover"
-                  />
-                )}
-
-                {/* Video element - only on client */}
-                {typeof window !== 'undefined' && (
-                  <video
-                    ref={videoRef}
-                    className="w-full h-full object-cover"
-                    muted={isMuted}
-                    loop
-                    playsInline
-                    preload="metadata"
-                    poster="/MAT02456-38.jpg"
-                  >
-                    <source src="/ig_video_1758894454.mp4" type="video/mp4" />
-                  </video>
-                )}
+                {/* Video element - always rendered with poster */}
+                <video
+                  ref={videoRef}
+                  className="w-full h-full object-cover"
+                  muted={isMuted}
+                  loop
+                  playsInline
+                  preload="metadata"
+                  poster="/MAT02456-38.jpg"
+                >
+                  <source src="/ig_video_1758894454.mp4" type="video/mp4" />
+                </video>
 
                 {/* Dark overlay for better button visibility */}
                 {!isPlaying && (
@@ -209,13 +196,22 @@ const VideoCTA = () => {
             </motion.h1>
 
             <motion.p
-              className="text-lg max-sm:text-base text-gray-300 leading-relaxed mb-8"
+              className="text-lg max-sm:text-base text-gray-300 leading-relaxed mb-6"
               custom={4}
               variants={fadeUp}
             >
               Por que apenas assistir ao maior movimento de empresários do estado se você pode ser parte dele?
               O Espírito Santo já começou a mudar. Agora é a sua vez de se posicionar, assumir o protagonismo
               e escrever a história junto com a gente.
+            </motion.p>
+
+            <motion.p
+              className="text-base max-sm:text-sm text-gray-400 leading-relaxed mb-8 italic"
+              custom={4.5}
+              variants={fadeUp}
+            >
+              Uma iniciativa Enjoy - já formamos o maior ambiente de negócios do Espírito Santo,
+              com mais de mil empresários impactados.
             </motion.p>
 
             {/* Benefits List */}
@@ -263,14 +259,19 @@ const VideoCTA = () => {
             </motion.div>
 
             {/* Urgency Text */}
-            <motion.p
-              className="mt-6 text-sm text-gray-400"
+            <motion.div
+              className="mt-6 space-y-2"
               custom={7}
               variants={fadeUp}
             >
-              <span className="text-[#ec020d] font-semibold">Vagas Limitadas</span> •
-              Evento em <span className="font-semibold">12 de Novembro de 2025</span>
-            </motion.p>
+              <p className="text-sm text-gray-400">
+                <span className="text-[#ec020d] font-semibold">Vagas Limitadas</span> •
+                Evento em <span className="font-semibold">12 de Novembro de 2025</span>
+              </p>
+              <p className="text-lg text-white font-bold">
+                Prepare-se para liderar a revolução empresarial.
+              </p>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>

@@ -9,12 +9,12 @@ const HeroSection = () => {
 
   return (
     <>
-      {/* Hero Section - 90vh */}
-      <section className="relative w-full h-[90vh] overflow-hidden flex flex-col items-center">
+      {/* Hero Section - 100vh */}
+      <section className="relative w-full h-screen overflow-hidden flex flex-col items-center">
         {/* Banner image as background - Desktop */}
         <div className="absolute inset-0 z-0 hidden sm:block">
           <Image
-            src="/[ENJOY] banner-desktop_imr_set2025.png"
+            src="/FOTOFUNDO.png"
             alt="IMR25 Banner"
             fill
             priority
@@ -22,6 +22,8 @@ const HeroSection = () => {
             sizes="100vw"
             quality={100}
           />
+          {/* Overlay azul escuro com opacidade */}
+          <div className="absolute inset-0 bg-blue-950/60"></div>
           {/* Overlay gradient for better text readability */}
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/30 to-slate-950/70"></div>
         </div>
@@ -37,6 +39,8 @@ const HeroSection = () => {
             sizes="100vw"
             quality={100}
           />
+          {/* Overlay azul escuro com opacidade */}
+          <div className="absolute inset-0 bg-blue-950/60"></div>
           {/* Overlay gradient for better text readability */}
           <div className="absolute inset-0 bg-gradient-to-b from-slate-950/20 via-slate-950/30 to-slate-950/70"></div>
         </div>
@@ -48,9 +52,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="text-[5.5rem] max-sm:text-3xl leading-[6rem] max-sm:leading-tight font-semibold text-white max-w-[1200px] max-sm:max-w-full text-center"
+            className="text-[4.5rem] md:text-[5rem] lg:text-[5.5rem] max-sm:text-3xl leading-[5rem] md:leading-[5.5rem] lg:leading-[6rem] max-sm:leading-tight font-semibold text-white max-w-[1400px] max-sm:max-w-full text-center"
           >
-            IMR25: O Chamado para a <br />
+            IMR25: O Chamado para a{" "}
             <span className="text-red-600">Transformação Empresarial</span>
           </motion.h1>
 
@@ -148,15 +152,20 @@ const HeroSection = () => {
                 </motion.div>
               </div>
 
-              {/* Tagline central */}
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+              {/* Chamada principal */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.7 }}
-                className="text-center mt-6 text-gray-300/60 text-sm max-sm:text-xs uppercase tracking-wider"
+                className="text-center mt-8 space-y-4"
               >
-                IMR25 • O evento que define o futuro dos negócios
-              </motion.p>
+                <p className="text-xl max-sm:text-base text-gray-100 font-medium">
+                  Desafie o status quo e descubra como crescer exponencialmente o seu negócio
+                </p>
+                <p className="text-lg max-sm:text-sm text-gray-300">
+                  Quer se conectar aos melhores empresários capixabas?
+                </p>
+              </motion.div>
             </div>
           </motion.div>
 
@@ -179,24 +188,26 @@ const HeroSection = () => {
               }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
               onClick={openModal}
-              className="bg-red-600 hover:bg-red-700 text-white px-8 max-sm:px-6 py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-red-500/25 text-lg max-sm:text-sm cursor-pointer max-sm:w-full"
+              className="bg-red-600 hover:bg-red-700 text-white px-10 max-sm:px-6 py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-red-500/25 text-lg max-sm:text-sm cursor-pointer max-sm:w-full"
               style={{ fontFamily: 'SK-Modernist, sans-serif' }}
             >
-              GARANTA AGORA SUA VAGA
+              GARANTA SUA VAGA
             </motion.button>
 
-            <motion.button
+            <motion.a
+              href="https://wa.me/5527997577707?text=Olá! Tenho interesse em ser patrocinador do IMR25 ou levar um grupo para o evento."
+              target="_blank"
+              rel="noopener noreferrer"
               variants={{
                 hidden: { opacity: 0, y: 20, scale: 0.95 },
                 visible: { opacity: 1, y: 0, scale: 1 },
               }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
-              onClick={openModal}
-              className="bg-transparent border border-gray-100/30 text-white px-8 max-sm:px-6 py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-red-500/25 text-lg max-sm:text-sm cursor-pointer max-sm:w-full"
+              className="text-gray-300 hover:text-white text-sm max-sm:text-xs underline underline-offset-4 transition-colors duration-200 cursor-pointer"
               style={{ fontFamily: 'SK-Modernist, sans-serif' }}
             >
-              Pacotes para Embaixadores
-            </motion.button>
+              Desejo ser patrocinador ou levar um grupo
+            </motion.a>
           </motion.div>
         </div>
       </section>
@@ -215,7 +226,7 @@ const HeroSection = () => {
         className="flex max-sm:grid max-sm:grid-cols-3 border-t border-b items-center justify-center gap-40 max-sm:gap-4 border-gray-100/15 w-full py-10 max-sm:py-6 z-50 relative"
       >
         {[
-          { title: 'Mentores', value: '8+' },
+          { title: 'Mentores', value: '9' },
           { title: 'Empresários Qualificados', value: '1.000' },
           { title: 'Data', value: '12/11/25' },
         ].map((item, i) => (

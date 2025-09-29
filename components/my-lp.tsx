@@ -15,10 +15,10 @@ const MyLp = () => {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
         className="min-h-[280px] sm:h-[420px] w-full bg-[url('/mylp.svg')] rounded-[20px] sm:rounded-[40px] border border-gray-200/52 bg-no-repeat bg-top bg-cover flex flex-col items-center px-4 sm:px-8 relative"
-        style={{ filter: 'hue-rotate(-20deg) saturate(0.8) brightness(0.9)' }}
+        style={{ filter: 'hue-rotate(-15deg) saturate(1.8) contrast(1.2) brightness(0.95)' }}
       >
         {/* Color overlay for red/blue tint */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#9a0008]/25 via-transparent to-[#1c1d1c]/20 mix-blend-multiply rounded-[20px] sm:rounded-[40px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#ec020d]/40 via-[#9a0008]/20 to-[#ec020d]/30 mix-blend-multiply rounded-[20px] sm:rounded-[40px]"></div>
 
         <motion.h1
           initial={{ opacity: 0, y: 20 }}

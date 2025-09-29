@@ -139,7 +139,7 @@ const Metrics = () => {
           </div>
 
           <div className="flex items-start flex-col gap-2 -mt-24">
-            <h2 className="text-7xl font-medium"></h2>
+            <h2 className="text-7xl font-medium">Final</h2>
             <span className="font-medium text-lg">Network Experience + Banda (Show)</span>
           </div>
         </motion.div>

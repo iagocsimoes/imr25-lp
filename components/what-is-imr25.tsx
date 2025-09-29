@@ -87,9 +87,12 @@ const WhatIsIMR25 = () => {
             custom={1}
             variants={fadeUp}
           >
-            Neste evento, buscamos{" "}
+            Um evento criado pela{" "}
+            <span className="text-white font-semibold">ENJOY</span>{" "}
+            que busca os{" "}
             <span className="text-white font-semibold">empresários de verdade</span>{" "}
-            que:
+            que lideram com propósito,<br />
+            vão além do lucro e constroem um legado:
           </motion.p>
         </motion.div>
 
@@ -158,14 +161,17 @@ const WhatIsIMR25 = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
         >
           <div className="bg-gradient-to-r from-[#ec020d]/10 via-[#9a0008]/5 to-[#ec020d]/10 rounded-2xl p-8 max-w-4xl mx-auto border border-[#ec020d]/20">
-            <p className="text-xl text-gray-200 font-light mb-4">
-              Se você se identifica com esses pontos e quer fazer parte da transformação
-              empresarial do Espírito Santo...
+            <p className="text-xl text-gray-200 font-light mb-6">
+              Já passaram mais de mil empresários pelas nossas formações e mentorias.
+              Essa é sua oportunidade de se conectar à Enjoy e construir um legado.
+            </p>
+            <p className="text-2xl text-white font-bold mb-4">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ec020d] to-[#9a0008]">
+                O que está faltando para você crescer ainda mais?
+              </span>
             </p>
             <p className="text-3xl text-white font-bold">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ec020d] to-[#9a0008]">
-                O IMR25 é para você!
-              </span>
+              Encontre a resposta no IMR 2025.
             </p>
           </div>
         </motion.div>

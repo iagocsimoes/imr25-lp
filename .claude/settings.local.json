@@ -41,7 +41,8 @@
       "Bash(git ls-tree:*)",
       "Bash(curl:*)",
       "Bash(npx sharp-cli:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(pnpm run:*)"
     ],
     "deny": [],
     "ask": []

@@ -15,6 +15,7 @@ import Plans from '@/components/plans'
 import Speakers from '@/components/speakers'
 import VideoCTA from '@/components/video-cta'
 import WhatIsIMR25 from '@/components/what-is-imr25'
+import TestimonialsSection from '@/components/testimonials-section'
 import TicketModal from '@/components/ticket-modal'
 import { useTicketModal } from '@/hooks/use-ticket-modal'
 import { TicketModalProvider } from '@/contexts/ticket-modal-context'
@@ -44,6 +45,7 @@ export default function Page() {
             <WhatIsIMR25 />
             <KeynoteSpeakers />
             <Speakers />
+            <TestimonialsSection />
             <Description />
           </div>
         </div>

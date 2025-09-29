@@ -29,14 +29,9 @@ export default function FAQ() {
         'Todos os ingressos podem ser parcelados em até 12x sem juros no cartão de crédito. Entre em contato para mais detalhes sobre formas de pagamento.',
     },
     {
-      question: 'Os pacotes para equipes têm desconto?',
+      question: 'Qual é a política de cancelamento?',
       answer:
-        'Sim! Os pacotes Platinum e Diamond oferecem economia significativa para empresas que desejam levar equipes completas ao evento. Entre em contato para conhecer os valores.',
-    },
-    {
-      question: 'Posso cancelar minha inscrição?',
-      answer:
-        'Sim, seguindo nossa política de cancelamento. Entre em contato através do WhatsApp para mais informações sobre prazos e condições.',
+        'Você tem até 7 dias após a compra para cancelar e receber reembolso integral. Após esse prazo, o ingresso não é reembolsável. Entre em contato pelo WhatsApp para solicitar o cancelamento.',
     },
   ]
 
