@@ -151,7 +151,6 @@ const Plans = () => {
                 <div className="space-y-4">
                   {[
                     'Acesso ao setor central (cadeira e mesa)',
-                    'Mesa de frutas',
                     'Acesso total ao conteúdo do evento',
                     'Almoço incluído',
                     'Networking Experience'

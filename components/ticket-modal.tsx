@@ -179,7 +179,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                               <div className="h-px bg-gradient-to-r from-transparent via-yellow-700/50 to-transparent my-6"></div>
 
                               <div className="space-y-4 flex-1">
-                                {['Acesso ao setor central (cadeira e mesa)', 'Mesa de frutas', 'Acesso total ao conteúdo do evento', 'Almoço incluído', 'Networking Experience'].map((item, i) => (
+                                {['Acesso ao setor central (cadeira e mesa)', 'Acesso total ao conteúdo do evento', 'Almoço incluído', 'Networking Experience'].map((item, i) => (
                                   <div key={i} className="flex items-start gap-3">
                                     <div className="w-1 h-1 bg-yellow-400 rounded-full mt-2"></div>
                                     <span className="text-gray-300 text-sm leading-relaxed">{item}</span>

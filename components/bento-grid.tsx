@@ -38,8 +38,8 @@ const BentoGrid = () => {
     },
     {
       id: 3,
-      title: "Mentalidade de Crescimento",
-      description: "Desenvolva uma mentalidade empresarial focada em crescimento exponencial e resultados sustentáveis.",
+      title: "Mentalidade de Resultados",
+      description: "Calibre sua mentalidade através de provocações reais, de quem já chegou lá.",
       icon: Zap,
       gradient: "from-[#9a0008]/20 to-[#ec020d]/10",
       size: "col-span-1 row-span-1",
