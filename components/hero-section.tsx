@@ -206,7 +206,7 @@ const HeroSection = () => {
               className="text-gray-300 hover:text-white text-sm max-sm:text-xs underline underline-offset-4 transition-colors duration-200 cursor-pointer"
               style={{ fontFamily: 'SK-Modernist, sans-serif' }}
             >
-              Desejo ser patrocinador ou levar um grupo
+              Desejo ser patrocinador
             </motion.a>
           </motion.div>
         </div>

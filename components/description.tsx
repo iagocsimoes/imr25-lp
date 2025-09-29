@@ -65,8 +65,8 @@ const Description = () => {
             title: 'Gestão e Planejamento',
           },
           {
-            text: 'Aprenda a liderar com propósito, dominando a arte de se comunicar com clareza e impacto para engajar seu time de verdade. Sente-se à mesa com outros empresários que vão somar oportunidades para o seu crescimento.',
-            title: 'Conexão e Engajamento',
+            text: 'Sente-se à mesa com outros empresários que vão somar oportunidades reais para o seu crescimento. Compartilhe desafios, troque experiências e construa parcerias estratégicas que aceleram resultados.',
+            title: 'Acesso e Engajamento',
           },
           {
             text: 'Participe de momentos de networking dirigidos e tenha engajamento direto com tomadores de decisão, construindo relacionamentos com a elite empresarial de diversos setores da economia capixaba.',
