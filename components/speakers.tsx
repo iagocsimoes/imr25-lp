@@ -22,7 +22,7 @@ const Speakers = () => {
       role: "Faturamento Bilionário",
       company: "Estratégias Avançadas",
       image: "/3.png",
-      bio: "O que muda na mentalidade de quem sai dos milhões e chega ao bilhão: Pense grande.",
+      bio: "Descubra como ele deixou a mentalidade milionária para trás e construiu uma trajetória de sucesso rumo ao bilhão.",
       about: "Marral Laje é empresário capixaba e fundador do Grupo Multicar, referência no setor automotivo no Espírito Santo. De espírito empreendedor, construiu sua trajetória sempre em busca de inovação e crescimento sustentável. Marral é reconhecido por sua visão estratégica, pela forma próxima de liderar e pela capacidade de transformar desafios em oportunidades de negócios."
     },
     {
@@ -30,7 +30,7 @@ const Speakers = () => {
       role: "Networking Milionário",
       company: "Conexões Estratégicas",
       image: "/9.png",
-      bio: "Como gerar conexões que se transformam em crescimento real: Amplie sua rede.",
+      bio: "Entenda como ele fez do networking uma estratégia poderosa, gerando alianças que resultaram em contratos milionários.",
       about: "Vitor Escocard é engenheiro de produção, mestre em Engenharia de Produção e possui MBAs em Finanças, Controladoria e Marketing. Iniciou a carreira no mercado financeiro e, em 2014, fundou a ORION, master franquia da Prudential do Brasil. Com mais de 4.700 apólices sob gestão, foi reconhecido 12 vezes internacionalmente e chegou ao topo da Times Square. Atua também como sócio-investidor em empresas de diferentes setores."
     },
     {
@@ -38,7 +38,7 @@ const Speakers = () => {
       role: "Estratégia e Liderança",
       company: "Transformação Empresarial",
       image: "/1.jpg",
-      bio: "Como transformar desafios em oportunidades de crescimento empresarial.",
+      bio: "Descubra como ela rompeu com os padrões tradicionais de vendas e capacitou milhares a vender com confiança e autoridade.",
       about: "Thammy Manuella é especialista em marketing e vendas, com mais de uma década de atuação no mercado. Ela desenvolveu métodos próprios focados em alta conversão e estratégias para transformar propostas em resultados. Com presença marcante nas redes sociais, ela divide experiências reais, provoca mentalidades e ensina a construir vendas sustentáveis sem depender de promessas vazias."
     },
     {
@@ -46,7 +46,7 @@ const Speakers = () => {
       role: "Gestão Afinada",
       company: "Liderança Criativa",
       image: "/2.png",
-      bio: "O que o jazz ensina sobre liderança, sintonia e improviso: Lidere com maestria.",
+      bio: "Saiba como ele transformou o jazz em uma metodologia de liderança que impulsionou equipes a resultados excepcionais.",
       about: "Saxofonista, compositor, pesquisador, palestrante e educador, Marcelo Coelho é referência em jazz no Brasil e no mundo. Com doutorado pela Unicamp e mestrado pela University of Miami, já lançou 10 álbuns e atuou ao lado de artistas como Caetano Veloso. Empreendedor, fundou a Acelerarte e lidera a Plataforma SOM."
     },
     {
@@ -54,7 +54,7 @@ const Speakers = () => {
       role: "Estratégias Jurídicas",
       company: "Blindagem Empresarial",
       image: "/5.jpg",
-      bio: "Como tomar decisões estratégicas com segurança jurídica: Proteja seu negócio.",
+      bio: "Saiba como ele utilizou sua expertise jurídica para blindar empresas e garantir um crescimento sustentável.",
       about: "Gustavo Fonseca é advogado, empresário e fundador da FASS Advogados, com escritórios em Vitória e São Paulo. Há 20 anos apoia empresas no Brasil e no exterior a crescer, proteger patrimônio e gerar negócios. Mentor e palestrante, conecta técnica jurídica e visão empresarial, além de atuar como investidor."
     },
     {
@@ -62,7 +62,7 @@ const Speakers = () => {
       role: "Liderança sem Filtro",
       company: "Conduzir na Pressão",
       image: "/8.png",
-      bio: "Como sair do modo 'apagador de incêndios' e virar líder de verdade: Seja proativo.",
+      bio: "Veja como ele deixou de ser um 'apagador de incêndios' para se tornar um líder que gera resultados mesmo sob pressão.",
       about: "Raphael Ruffo é empresário e especialista em comunicação e comportamento. Sócio-fundador da Alfaduo Desenvolvimento Humano, empresa de wellness corporativo que transforma cuidado em lucro. Ele promove ambientes de trabalho mais saudáveis. Mentor de empresários, conduz jornadas de performance e propósito."
     }
   ];
