@@ -195,7 +195,7 @@ const HeroSection = () => {
             </motion.button>
 
             <motion.a
-              href="https://wa.me/5527997577707?text=Olá! Tenho interesse em ser patrocinador do IMR25 ou levar um grupo para o evento."
+              href="http://wa.me/+5527996417399"
               target="_blank"
               rel="noopener noreferrer"
               variants={{

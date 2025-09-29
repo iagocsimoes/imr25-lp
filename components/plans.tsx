@@ -94,7 +94,7 @@ const Plans = () => {
               </div>
 
               <a
-                href="https://clkdmg.site/pay/blackimr"
+                href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-2025/3147276"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
@@ -164,7 +164,7 @@ const Plans = () => {
               </div>
 
               <a
-                href="https://clkdmg.site/pay/goldimr"
+                href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-2025/3147276"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
@@ -242,7 +242,7 @@ const Plans = () => {
               </div>
 
               <a
-                href="https://clkdmg.site/pay/imrvip"
+                href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-2025/3147276"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
