@@ -22,7 +22,7 @@ const Speakers = () => {
       role: "Faturamento Bilionário",
       company: "Estratégias Avançadas",
       image: "/3.png",
-      bio: "Descubra como ele deixou a mentalidade milionária para trás e construiu uma trajetória de sucesso rumo ao bilhão.",
+      bio: "Descubra como ele transformou a mentalidade milionária e construiu uma trajetória de sucesso rumo ao bilhão.",
       about: "Marral Laje é empresário capixaba e fundador do Grupo Multicar, referência no setor automotivo no Espírito Santo. De espírito empreendedor, construiu sua trajetória sempre em busca de inovação e crescimento sustentável. Marral é reconhecido por sua visão estratégica, pela forma próxima de liderar e pela capacidade de transformar desafios em oportunidades de negócios."
     },
     {
@@ -35,7 +35,7 @@ const Speakers = () => {
     },
     {
       name: "Thammy Manuella",
-      role: "Estratégia e Liderança",
+      role: "Vendas e Marketing Digital",
       company: "Transformação Empresarial",
       image: "/1.jpg",
       bio: "Descubra como ela rompeu com os padrões tradicionais de vendas e capacitou milhares a vender com confiança e autoridade.",
@@ -51,7 +51,7 @@ const Speakers = () => {
     },
     {
       name: "Gustavo Fonseca",
-      role: "Estratégias Jurídicas",
+      role: "Estratégias",
       company: "Blindagem Empresarial",
       image: "/5.jpg",
       bio: "Saiba como ele utilizou sua expertise jurídica para blindar empresas e garantir um crescimento sustentável.",

@@ -9,7 +9,7 @@ const TestimonialsSection = () => {
     {
       id: 1,
       name: "Andressa Keller",
-      role: "Empresária",
+      role: "Diretora - Graziato Engenharia",
       content: "Alcancei minha meta em 1/3 do tempo e realizei o sonho do apartamento em 6 meses (previsão era 4 anos). A Enjoy distorce o tempo.",
       icon: Target,
       gradient: "from-[#ec020d]/20 to-[#9a0008]/10",
@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
     {
       id: 2,
       name: "Arthur Galvão",
-      role: "Empresário",
+      role: "Mentor de posicionamento de marca",
       content: "Investi na Enjoy e tive ROI de 13,88x a partir das conexões feitas no movimento da Enjoy.",
       icon: TrendingUp,
       gradient: "from-[#9a0008]/20 to-[#ec020d]/10",

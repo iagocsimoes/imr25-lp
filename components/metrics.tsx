@@ -53,7 +53,7 @@ const Metrics = () => {
             <span className="font-medium text-lg">Empresários</span>
           </div>
           <div className="flex items-start flex-col gap-2">
-            <h2 className="text-7xl font-medium">7+</h2>
+            <h2 className="text-7xl font-medium">9</h2>
             <span className="font-medium text-lg">Mentores de alto nível</span>
           </div>
         </motion.div>
@@ -233,7 +233,7 @@ const Metrics = () => {
         <div className="grid grid-cols-2 gap-8 text-center">
           {[
             { value: '1.000', label: 'Empresários comprometidos' },
-            { value: '7+', label: 'Mentores de alto nível' },
+            { value: '9', label: 'Mentores de alto nível' },
             { value: '3', label: 'Níveis de experiência' },
             { value: '12/11', label: 'Data do evento' },
           ].map((item, i) => (
