@@ -10,7 +10,7 @@ import Image from "next/image";
 const VideoCTA = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isClient, setIsClient] = useState(false);
-  const [isMuted, setIsMuted] = useState(true); // Sempre inicia mutado para evitar problemas de hidratação
+  const [isMuted, setIsMuted] = useState(false); // Inicia com áudio
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const { openModal } = useTicketModalContext()
@@ -32,9 +32,11 @@ const VideoCTA = () => {
             setIsPlaying(true);
             // Auto-play quando entra na viewport
             if (videoRef.current) {
+              // Tenta tocar com áudio primeiro
+              videoRef.current.muted = false;
               videoRef.current.play().catch(err => {
-                // Se falhar com som, tenta mutado
-                console.log("Autoplay failed, trying muted:", err);
+                // Se falhar com som (devido a políticas do navegador), tenta mutado
+                console.log("Autoplay with audio failed, trying muted:", err);
                 setIsMuted(true);
                 if (videoRef.current) {
                   videoRef.current.muted = true;
