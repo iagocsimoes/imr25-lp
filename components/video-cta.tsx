@@ -36,15 +36,11 @@ const VideoCTA = () => {
                 // Se falhar com som, tenta mutado
                 console.log("Autoplay failed, trying muted:", err);
                 setIsMuted(true);
-                videoRef.current?.play();
-              });
-              // Desmuta após 100ms se o usuário não interagiu
-              setTimeout(() => {
-                if (videoRef.current && isMuted) {
-                  setIsMuted(false);
-                  videoRef.current.muted = false;
+                if (videoRef.current) {
+                  videoRef.current.muted = true;
+                  videoRef.current.play();
                 }
-              }, 100);
+              });
             }
           } else {
             // Pausa quando sai da viewport
@@ -66,7 +62,7 @@ const VideoCTA = () => {
         observer.unobserve(container);
       }
     };
-  }, [isClient, isMuted]);
+  }, [isClient]);
 
   const toggleMute = () => {
     setIsMuted(!isMuted);
