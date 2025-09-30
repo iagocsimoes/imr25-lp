@@ -210,12 +210,13 @@ const HeroSection = () => {
             transition: { staggerChildren: 0.25 },
           },
         }}
-        className="flex max-sm:grid max-sm:grid-cols-3 border-t border-b items-center justify-center gap-40 max-sm:gap-4 border-gray-100/15 w-full py-10 max-sm:py-6 z-50 relative"
+        className="flex max-sm:grid max-sm:grid-cols-2 border-t border-b items-center justify-center gap-24 max-sm:gap-4 border-gray-100/15 w-full py-10 max-sm:py-6 z-50 relative"
       >
         {[
           { title: 'Mentores', value: '9' },
           { title: 'Empresários Qualificados', value: '1.000' },
           { title: 'Data', value: '12/11/25' },
+          { title: 'Horário', value: '08h às 22h' },
         ].map((item, i) => (
           <motion.div
             key={i}

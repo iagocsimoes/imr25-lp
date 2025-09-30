@@ -91,7 +91,7 @@ const TestimonialsSection = () => {
                         alt={testimonial.name}
                         width={48}
                         height={48}
-                        className={`w-full h-full ${testimonial.name === 'Arthur Galvão' ? 'object-top' : 'object-cover'}`}
+                        className={`w-full h-full ${testimonial.name === 'Arthur Galvão' ? 'object-contain' : testimonial.name === 'Andressa Keller' ? 'object-cover scale-110' : 'object-cover'}`}
                       />
                     </div>
                     <div>

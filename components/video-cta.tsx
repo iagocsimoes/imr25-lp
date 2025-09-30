@@ -266,7 +266,7 @@ const VideoCTA = () => {
             >
               <p className="text-sm text-gray-400">
                 <span className="text-[#ec020d] font-semibold">Vagas Limitadas</span> •
-                Evento em <span className="font-semibold">12 de Novembro de 2025</span>
+                Evento em <span className="font-semibold">12 de Novembro de 2025 no Ilha Buffet, Vitória/ES</span>
               </p>
               <p className="text-lg text-white font-bold">
                 Prepare-se para liderar a revolução empresarial.
