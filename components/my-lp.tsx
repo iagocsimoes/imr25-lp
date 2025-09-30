@@ -8,7 +8,7 @@ const MyLp = () => {
   return (
     <div className="max-w-[1400px] z-50 mx-auto mt-12 sm:mt-20 pb-12 sm:pb-20 px-4 sm:px-0">
       <motion.a
-        href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-2025/3147276"
+        href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-12-11-2025/3149276?_gl=1*t62a9x*_gcl_au*MTgwNDkxMTA2Ni4xNzU4OTA3NDg5LjIwOTI3NzAwNC4xNzU5MjU5ODA0LjE3NTkyNTk4MDM.*_ga*MTg3MTQ4MDA3NS4xNzU4OTA3NDkw*_ga_KXH10SQTZF*czE3NTkyNTczMzQkbzgkZzEkdDE3NTkyNjIxMTAkajU1JGwwJGgxNTMzNTI5MTE"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ opacity: 0, y: 30 }}

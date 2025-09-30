@@ -132,7 +132,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                               </div>
                             </div>
 
-                            <a href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-2025/3147276" target="_blank" rel="noopener noreferrer" className="w-full bg-gray-800/50 hover:bg-gray-700/50 text-white rounded-lg py-3 border border-gray-700 transition-all duration-300 hover:border-gray-600 text-center block font-semibold">
+                            <a href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-12-11-2025/3149276?_gl=1*t62a9x*_gcl_au*MTgwNDkxMTA2Ni4xNzU4OTA3NDg5LjIwOTI3NzAwNC4xNzU5MjU5ODA0LjE3NTkyNTk4MDM.*_ga*MTg3MTQ4MDA3NS4xNzU4OTA3NDkw*_ga_KXH10SQTZF*czE3NTkyNTczMzQkbzgkZzEkdDE3NTkyNjIxMTAkajU1JGwwJGgxNTMzNTI5MTE" target="_blank" rel="noopener noreferrer" className="w-full bg-gray-800/50 hover:bg-gray-700/50 text-white rounded-lg py-3 border border-gray-700 transition-all duration-300 hover:border-gray-600 text-center block font-semibold">
                               Garantir Ingresso BLACK
                             </a>
                           </div>
@@ -188,7 +188,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                               </div>
                             </div>
 
-                            <a href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-2025/3147276" target="_blank" rel="noopener noreferrer" className="w-full bg-yellow-900/30 hover:bg-yellow-900/50 text-white rounded-lg py-3 border border-yellow-800/50 transition-all duration-300 hover:border-yellow-700/50 text-center block font-semibold">
+                            <a href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-12-11-2025/3149276?_gl=1*t62a9x*_gcl_au*MTgwNDkxMTA2Ni4xNzU4OTA3NDg5LjIwOTI3NzAwNC4xNzU5MjU5ODA0LjE3NTkyNTk4MDM.*_ga*MTg3MTQ4MDA3NS4xNzU4OTA3NDkw*_ga_KXH10SQTZF*czE3NTkyNTczMzQkbzgkZzEkdDE3NTkyNjIxMTAkajU1JGwwJGgxNTMzNTI5MTE" target="_blank" rel="noopener noreferrer" className="w-full bg-yellow-900/30 hover:bg-yellow-900/50 text-white rounded-lg py-3 border border-yellow-800/50 transition-all duration-300 hover:border-yellow-700/50 text-center block font-semibold">
                               Garantir Ingresso GOLD
                             </a>
                           </div>
@@ -249,7 +249,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                               </div>
                             </div>
 
-                            <a href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-2025/3147276" target="_blank" rel="noopener noreferrer" className="w-full bg-gradient-to-r from-[#ec020d]/80 to-[#9a0008]/80 hover:from-[#ec020d] hover:to-[#9a0008] text-white rounded-lg py-3 border border-[#ec020d]/50 transition-all duration-300 hover:border-[#ec020d] shadow-lg hover:shadow-[#ec020d]/25 text-center block font-semibold">
+                            <a href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-12-11-2025/3149276?_gl=1*t62a9x*_gcl_au*MTgwNDkxMTA2Ni4xNzU4OTA3NDg5LjIwOTI3NzAwNC4xNzU5MjU5ODA0LjE3NTkyNTk4MDM.*_ga*MTg3MTQ4MDA3NS4xNzU4OTA3NDkw*_ga_KXH10SQTZF*czE3NTkyNTczMzQkbzgkZzEkdDE3NTkyNjIxMTAkajU1JGwwJGgxNTMzNTI5MTE" target="_blank" rel="noopener noreferrer" className="w-full bg-gradient-to-r from-[#ec020d]/80 to-[#9a0008]/80 hover:from-[#ec020d] hover:to-[#9a0008] text-white rounded-lg py-3 border border-[#ec020d]/50 transition-all duration-300 hover:border-[#ec020d] shadow-lg hover:shadow-[#ec020d]/25 text-center block font-semibold">
                               Garantir Ingresso VIP
                             </a>
                           </div>
