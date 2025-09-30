@@ -31,7 +31,7 @@ const Speakers = () => {
       company: "Conexões Estratégicas",
       image: "/9.png",
       bio: "Entenda como ele fez do networking uma estratégia poderosa, gerando alianças que resultaram em contratos milionários.",
-      about: "Vitor Escocard é engenheiro de produção, mestre em Engenharia de Produção e possui MBAs em Finanças, Controladoria e Marketing. Iniciou a carreira no mercado financeiro e, em 2014, fundou a ORION, master franquia da Prudential do Brasil. Com mais de 4.700 apólices sob gestão, foi reconhecido 12 vezes internacionalmente e chegou ao topo da Times Square. Atua também como sócio-investidor em empresas de diferentes setores."
+      about: "Vitor Escocard é engenheiro de produção, mestre em Engenharia de Produção e possui MBAs em Finanças, Controladoria e Marketing. Está na Prudential desde 2017, mas vendia sozinho. Em 2019, fundou a ORION, master franquia da Prudential do Brasil. Com mais de 4.700 apólices sob gestão, foi reconhecido 12 vezes internacionalmente e chegou ao topo da Times Square. Atua também como sócio-investidor em empresas de diferentes setores."
     },
     {
       name: "Thammy Manuella",
@@ -51,18 +51,18 @@ const Speakers = () => {
     },
     {
       name: "Gustavo Fonseca",
-      role: "Estratégias",
+      role: "Estratégia Empresarial",
       company: "Blindagem Empresarial",
       image: "/5.jpg",
-      bio: "Saiba como ele utilizou sua expertise jurídica para blindar empresas e garantir um crescimento sustentável.",
+      bio: "Gustavo Fonseca vai te desafiar a repensar toda a sua visão de negócio e ajustar a rota estratégica da sua empresa.",
       about: "Gustavo Fonseca é advogado, empresário e fundador da FASS Advogados, com escritórios em Vitória e São Paulo. Há 20 anos apoia empresas no Brasil e no exterior a crescer, proteger patrimônio e gerar negócios. Mentor e palestrante, conecta técnica jurídica e visão empresarial, além de atuar como investidor."
     },
     {
       name: "Raphael Ruffo",
-      role: "Liderança sem Filtro",
-      company: "Conduzir na Pressão",
+      role: "Liderança e Comunicação",
+      company: "Times de Alta Performance",
       image: "/8.png",
-      bio: "Veja como ele deixou de ser um 'apagador de incêndios' para se tornar um líder que gera resultados mesmo sob pressão.",
+      bio: "Aprenda sobre liderança, comunicação eficaz e como construir um time motivado, engajado e que entrega resultados acima da média.",
       about: "Raphael Ruffo é empresário e especialista em comunicação e comportamento. Sócio-fundador da Alfaduo Desenvolvimento Humano, empresa de wellness corporativo que transforma cuidado em lucro. Ele promove ambientes de trabalho mais saudáveis. Mentor de empresários, conduz jornadas de performance e propósito."
     }
   ];
