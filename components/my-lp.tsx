@@ -1,11 +1,9 @@
 'use client'
 
 import { MoveRight } from 'lucide-react'
-import { useTicketModalContext } from '@/contexts/ticket-modal-context'
 import { motion } from 'framer-motion'
 
 const MyLp = () => {
-  const { openModal } = useTicketModalContext()
 
   return (
     <div className="max-w-[1400px] z-50 mx-auto mt-12 sm:mt-20 pb-12 sm:pb-20 px-4 sm:px-0">
@@ -38,17 +36,19 @@ const MyLp = () => {
           Prepare-se para Liderar a Revolução! O palco das estratégias que transformarão os negócios do Estado.
         </motion.h2>
 
-        <motion.button
+        <motion.a
           initial={{ opacity: 0, y: 20, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.6, ease: 'easeOut' }}
-          onClick={openModal}
-          className="flex items-center gap-2 mt-8 sm:mt-12 bg-[#ec020d] hover:bg-[#9a0008] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-[#ec020d]/25 text-base sm:text-lg cursor-pointer"
+          href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-2025/3147276"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 mt-8 sm:mt-12 bg-[#ec020d] hover:bg-[#9a0008] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-medium transition-colors duration-200 shadow-lg hover:shadow-[#ec020d]/25 text-base sm:text-lg cursor-pointer inline-flex"
           style={{ fontFamily: 'SK-Modernist, sans-serif' }}
         >
           Garanta sua vaga agora
           <MoveRight className="size-5 sm:size-6" />
-        </motion.button>
+        </motion.a>
       </motion.div>
     </div>
   )
