@@ -52,10 +52,10 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="text-[4.5rem] md:text-[5rem] lg:text-[5.5rem] max-sm:text-3xl leading-[5rem] md:leading-[5.5rem] lg:leading-[6rem] max-sm:leading-tight font-semibold text-white max-w-[1400px] max-sm:max-w-full text-center"
+            className="text-[4.5rem] md:text-[5rem] lg:text-[5.5rem] max-sm:text-[1.75rem] leading-[5rem] md:leading-[5.5rem] lg:leading-[6rem] max-sm:leading-tight font-semibold text-white max-w-[1400px] max-sm:max-w-full text-center"
           >
-            IMR25: O Chamado para a{" "}
-            <span className="text-red-600">Transformação Empresarial</span>
+            <span className="max-sm:block">IMR25: O Chamado para</span>{" "}
+            <span className="max-sm:block text-red-600">a Transformação Empresarial</span>
           </motion.h1>
 
           {/* Subtítulo com Bullet Points Premium */}
@@ -194,6 +194,20 @@ const HeroSection = () => {
               GARANTA SUA VAGA
             </motion.button>
 
+            <motion.a
+              variants={{
+                hidden: { opacity: 0, y: 20, scale: 0.95 },
+                visible: { opacity: 1, y: 0, scale: 1 },
+              }}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
+              href="https://avatar.enjoywork.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-transparent border-2 border-white/20 hover:border-red-600/50 hover:bg-red-600/10 text-white px-10 max-sm:px-6 py-3 rounded-lg font-medium transition-all duration-200 text-lg max-sm:text-sm cursor-pointer max-sm:w-full text-center"
+              style={{ fontFamily: 'SK-Modernist, sans-serif' }}
+            >
+              CRIE SUA FOTO #EUVOU
+            </motion.a>
 
           </motion.div>
         </div>

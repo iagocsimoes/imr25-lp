@@ -74,7 +74,7 @@ const Plans = () => {
                     12x de R$ 83,08
                   </div>
                   <div className="text-gray-400">
-                    ou R$ 997 à vista
+                    ou R$ 1.016,94 à vista
                   </div>
                 </div>
 

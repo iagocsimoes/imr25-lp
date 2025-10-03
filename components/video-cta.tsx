@@ -105,20 +105,20 @@ const VideoCTA = () => {
             variants={fadeUp}
             ref={containerRef}
           >
-            <div className="relative aspect-square w-full rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700">
+            <div className="relative w-full max-w-md mx-auto rounded-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 border border-gray-700">
               {/* Video Container */}
-              <div className="relative w-full h-full">
+              <div className="relative w-full">
                 {/* Video element - always rendered with poster */}
                 <video
                   ref={videoRef}
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto"
                   muted={isMuted}
                   loop
                   playsInline
                   preload="metadata"
                   poster="/MAT02456-38.jpg"
                 >
-                  <source src="/ig_video_1758894454.mp4" type="video/mp4" />
+                  <source src="/lasaro.mp4" type="video/mp4" />
                 </video>
 
                 {/* Dark overlay for better button visibility */}
