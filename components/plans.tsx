@@ -74,7 +74,7 @@ const Plans = () => {
                     12x de R$ 83,08
                   </div>
                   <div className="text-gray-400">
-                    ou R$ 1.016,94 à vista
+                    ou R$ 997,00 à vista + taxas
                   </div>
                 </div>
 
@@ -142,7 +142,7 @@ const Plans = () => {
                     12x de R$ 249,75
                   </div>
                   <div className="text-gray-400">
-                    ou R$ 2.997 à vista
+                    ou R$ 2.997 à vista + taxas
                   </div>
                 </div>
 
@@ -216,7 +216,7 @@ const Plans = () => {
                     12x de R$ 499,75
                   </div>
                   <div className="text-gray-400">
-                    ou R$ 5.997 à vista
+                    ou R$ 5.997 à vista + taxas
                   </div>
                 </div>
 
