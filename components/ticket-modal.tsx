@@ -279,7 +279,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                             Entre em contato com nossa equipe comercial
                           </p>
                           <a
-                            href="https://wa.me/5527997577707?text=Olá! Tenho interesse em ser patrocinador do IMR25 ou levar um grupo para o evento."
+                            href="https://wa.me/5527996417399?text=Olá! Tenho interesse em ser patrocinador do IMR25 ou levar um grupo para o evento."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#ec020d] to-[#9a0008] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"

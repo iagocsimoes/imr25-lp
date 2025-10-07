@@ -1,5 +1,5 @@
 export const openWhatsApp = (message: string = '') => {
-  const phoneNumber = '5527996417399' // Substitua pelo número real da empresa
+  const phoneNumber = '5527996417399' // Número do WhatsApp da empresa
   const encodedMessage = encodeURIComponent(message)
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
 
