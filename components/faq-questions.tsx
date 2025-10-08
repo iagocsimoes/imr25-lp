@@ -11,7 +11,7 @@ export default function FAQ() {
     {
       question: 'Quando e onde será o IMR25?',
       answer:
-        'O evento acontecerá no dia 12 de novembro de 2025, em Vitória/ES. No Ilha Buffet das 08:00h as 23:00h.',
+        'O evento acontecerá no dia 12 de novembro de 2025, em Vitória/ES. No Ilha Buffet com conteudo sendo das 08:00h as 19:00h e Networking Exclusive (Apenas para VIPS) das 19:00 as 23:00',
     },
     {
       question: 'Qual é a diferença entre os ingressos Black, Gold e VIP?',
