@@ -53,7 +53,7 @@ const Speakers = () => {
       name: "Gustavo Fonseca",
       role: "Estratégia Empresarial",
       company: "Blindagem Empresarial",
-      image: "/5.jpg",
+      image: "/IMG_6553.JPEG.jpg",
       bio: "Gustavo Fonseca vai te desafiar a repensar toda a sua visão de negócio e ajustar a rota estratégica da sua empresa.",
       about: "Gustavo Fonseca é advogado, empresário e fundador da FASS Advogados, com escritórios em Vitória e São Paulo. Há 20 anos apoia empresas no Brasil e no exterior a crescer, proteger patrimônio e gerar negócios. Mentor e palestrante, conecta técnica jurídica e visão empresarial, além de atuar como investidor."
     },
@@ -117,7 +117,7 @@ const Speakers = () => {
                     src={speaker.image}
                     alt={speaker.name}
                     fill
-                    className="object-cover object-top"
+                    className={`object-cover ${speaker.name === "Gustavo Fonseca" ? "object-[center_20%]" : "object-top"}`}
                   />
                 </div>
                 <div className="flex-1">
