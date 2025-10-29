@@ -82,7 +82,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                 {/* Content */}
                 <div className="flex-1 overflow-y-auto p-4 md:p-8">
                   {selectedTab === 'ingressos' && (
-                    <div className="grid gap-8 md:grid-cols-3">
+                    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                       {/* Ingresso Black */}
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -179,7 +179,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                               <div className="h-px bg-gradient-to-r from-transparent via-yellow-700/50 to-transparent my-6"></div>
 
                               <div className="space-y-4 flex-1">
-                                {['Acesso ao setor central (cadeira e mesa)', 'Acesso total ao conteúdo do evento', 'Almoço incluído', 'Networking Experience'].map((item, i) => (
+                                {['Acesso ao setor central (cadeira e mesa)', 'Acesso total ao conteúdo do evento', 'Almoço incluído'].map((item, i) => (
                                   <div key={i} className="flex items-start gap-3">
                                     <div className="w-1 h-1 bg-yellow-400 rounded-full mt-2"></div>
                                     <span className="text-gray-300 text-sm leading-relaxed">{item}</span>
@@ -195,11 +195,67 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                         </div>
                       </motion.div>
 
-                      {/* Ingresso VIP */}
+                      {/* Ingresso PREMIUM */}
                       <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
+                        className="h-full"
+                      >
+                        <div className="relative h-full group">
+                          {/* Neon Glow Background - Purple */}
+                          <div className="absolute -inset-4 bg-gradient-to-r from-purple-600/40 via-purple-500/50 to-purple-600/40 rounded-3xl blur-xl opacity-70 group-hover:opacity-90 transition-opacity"></div>
+
+                          {/* Futuristic Border */}
+                          <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-purple-500/30 to-purple-600/20 rounded-2xl"></div>
+
+                          {/* Tech Frame Lines */}
+                          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
+                          <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
+
+                          {/* Card Content */}
+                          <div className="relative bg-slate-950/95 border border-purple-900/30 rounded-2xl p-8 m-[1px] h-full backdrop-blur-sm flex flex-col">
+                            {/* Tech Corner Decorations */}
+                            <div className="absolute top-2 left-2 w-8 h-8 border-l-2 border-t-2 border-purple-600/30"></div>
+                            <div className="absolute top-2 right-2 w-8 h-8 border-r-2 border-t-2 border-purple-600/30"></div>
+                            <div className="absolute bottom-2 left-2 w-8 h-8 border-l-2 border-b-2 border-purple-600/30"></div>
+                            <div className="absolute bottom-2 right-2 w-8 h-8 border-r-2 border-b-2 border-purple-600/30"></div>
+
+                            <div className="mb-6">
+                              <h3 className="text-2xl font-bold mb-6 text-white">
+                                INGRESSO<br />
+                                <span className="text-5xl font-black">PREMIUM</span>
+                              </h3>
+
+                              <div className="space-y-2 mb-6">
+                                <div className="text-3xl font-bold text-white">12x de R$ 416,42</div>
+                                <div className="text-gray-400">ou R$ 4.997 à vista</div>
+                              </div>
+
+                              <div className="h-px bg-gradient-to-r from-transparent via-purple-700/50 to-transparent my-6"></div>
+
+                              <div className="space-y-4 flex-1">
+                                {['Acesso ao VIP Lounge (cadeira e mesa)', 'Acesso total ao conteúdo do evento', 'Café da manhã incluído', 'Almoço incluído', 'Mesa gastronômica e serviço de garçom'].map((item, i) => (
+                                  <div key={i} className="flex items-start gap-3">
+                                    <div className="w-1 h-1 bg-purple-400 rounded-full mt-2"></div>
+                                    <span className="text-gray-300 text-sm leading-relaxed">{item}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+
+                            <a href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-12-11-2025/3149276?_gl=1*t62a9x*_gcl_au*MTgwNDkxMTA2Ni4xNzU4OTA3NDg5LjIwOTI3NzAwNC4xNzU5MjU5ODA0LjE3NTkyNTk4MDM.*_ga*MTg3MTQ4MDA3NS4xNzU4OTA3NDkw*_ga_KXH10SQTZF*czE3NTkyNTczMzQkbzgkZzEkdDE3NTkyNjIxMTAkajU1JGwwJGgxNTMzNTI5MTE/utm_source=landing-page&utm_medium=geral&utm_campaign=imr-25" target="_blank" rel="noopener noreferrer" className="w-full bg-purple-900/30 hover:bg-purple-900/50 text-white rounded-lg py-3 border border-purple-800/50 transition-all duration-300 hover:border-purple-700/50 text-center block font-semibold">
+                              Garantir Ingresso PREMIUM
+                            </a>
+                          </div>
+                        </div>
+                      </motion.div>
+
+                      {/* Ingresso VIP */}
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3 }}
                         className="h-full"
                       >
                         <div className="relative h-full group">

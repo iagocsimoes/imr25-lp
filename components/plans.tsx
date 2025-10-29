@@ -37,13 +37,13 @@ const Plans = () => {
 
       {/* Pricing Cards - New Futuristic Design */}
       <motion.div
-        className="flex flex-col lg:flex-row max-sm:flex-col gap-8 max-sm:gap-6 max-w-7xl mx-auto items-stretch justify-center"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-sm:gap-6 max-w-[1600px] mx-auto"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
         {/* Ingresso Black */}
-        <motion.div custom={0} variants={fadeUp} className="flex-1">
+        <motion.div custom={0} variants={fadeUp}>
           <div className="relative h-full group">
             {/* Neon Glow Background */}
             <div className="absolute -inset-4 bg-gradient-to-r from-gray-600/30 via-gray-500/40 to-gray-600/30 rounded-3xl blur-xl opacity-60 group-hover:opacity-80 transition-opacity"></div>
@@ -111,7 +111,7 @@ const Plans = () => {
         </motion.div>
 
         {/* Ingresso Gold */}
-        <motion.div custom={1} variants={fadeUp} className="flex-1">
+        <motion.div custom={1} variants={fadeUp}>
           <div className="relative h-full group">
             {/* Neon Glow Background */}
             <div className="absolute -inset-4 bg-gradient-to-r from-yellow-600/40 via-yellow-500/50 to-yellow-600/40 rounded-3xl blur-xl opacity-70 group-hover:opacity-90 transition-opacity"></div>
@@ -179,8 +179,79 @@ const Plans = () => {
           </div>
         </motion.div>
 
+        {/* Ingresso PREMIUM */}
+        <motion.div custom={2} variants={fadeUp}>
+          <div className="relative h-full group">
+            {/* Neon Glow Background - Purple */}
+            <div className="absolute -inset-4 bg-gradient-to-r from-purple-600/40 via-purple-500/50 to-purple-600/40 rounded-3xl blur-xl opacity-70 group-hover:opacity-90 transition-opacity"></div>
+
+            {/* Futuristic Border */}
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-purple-500/30 to-purple-600/20 rounded-2xl"></div>
+
+            {/* Tech Frame Lines */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
+
+            {/* Card Content */}
+            <div className="relative bg-slate-950/95 border border-purple-900/30 rounded-2xl p-8 m-[1px] h-full backdrop-blur-sm">
+              {/* Tech Corner Decorations */}
+              <div className="absolute top-2 left-2 w-8 h-8 border-l-2 border-t-2 border-purple-600/30"></div>
+              <div className="absolute top-2 right-2 w-8 h-8 border-r-2 border-t-2 border-purple-600/30"></div>
+              <div className="absolute bottom-2 left-2 w-8 h-8 border-l-2 border-b-2 border-purple-600/30"></div>
+              <div className="absolute bottom-2 right-2 w-8 h-8 border-r-2 border-b-2 border-purple-600/30"></div>
+
+              <div className="mb-6">
+                <h3 className="text-2xl max-sm:text-xl font-bold mb-6 text-white">
+                  INGRESSO<br />
+                  <span className="text-5xl max-sm:text-4xl font-black">PREMIUM</span>
+                </h3>
+
+                <div className="space-y-2 mb-6">
+                  <div className="text-3xl max-sm:text-2xl font-bold text-white">
+                    12x de R$ 416,42
+                  </div>
+                  <div className="text-gray-400">
+                    ou R$ 4.997 à vista + taxas
+                  </div>
+                </div>
+
+                <div className="h-px bg-gradient-to-r from-transparent via-purple-700/50 to-transparent my-6"></div>
+
+                <div className="space-y-4">
+                  {[
+                    'Acesso ao VIP Lounge (cadeira e mesa)',
+                    'Acesso total ao conteúdo do evento',
+                    'Café da manhã incluído',
+                    'Almoço incluído',
+                    'Mesa gastronômica e serviço de garçom',
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <div className="w-1 h-1 bg-purple-400 rounded-full mt-2"></div>
+                      <span className="text-gray-300 text-sm leading-relaxed">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <a
+                href="https://www.sympla.com.br/evento/imersao-maquina-de-resultados-12-11-2025/3149276?_gl=1*t62a9x*_gcl_au*MTgwNDkxMTA2Ni4xNzU4OTA3NDg5LjIwOTI3NzAwNC4xNzU5MjU5ODA0LjE3NTkyNTk4MDM.*_ga*MTg3MTQ4MDA3NS4xNzU4OTA3NDkw*_ga_KXH10SQTZF*czE3NTkyNTczMzQkbzgkZzEkdDE3NTkyNjIxMTAkajU1JGwwJGgxNTMzNTI5MTE/utm_source=landing-page&utm_medium=geral&utm_campaign=imr-25"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button
+                  className="w-full bg-purple-900/30 hover:bg-purple-900/50 text-white rounded-lg py-3 border border-purple-800/50 transition-all duration-300 hover:border-purple-700/50"
+                >
+                  Garantir Ingresso PREMIUM
+                  <ChevronRight className="w-5 h-5 ml-2" />
+                </Button>
+              </a>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Ingresso VIP */}
-        <motion.div custom={2} variants={fadeUp} className="flex-1">
+        <motion.div custom={3} variants={fadeUp}>
           <div className="relative h-full group">
             {/* Neon Glow Background - Intense Red */}
             <div className="absolute -inset-4 bg-gradient-to-r from-[#ec020d]/50 via-[#ec020d]/70 to-[#ec020d]/50 rounded-3xl blur-2xl opacity-80 group-hover:opacity-100 transition-opacity animate-pulse"></div>
