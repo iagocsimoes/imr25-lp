@@ -230,6 +230,20 @@ const Plans = () => {
                       <span className="text-gray-300 text-sm leading-relaxed">{item}</span>
                     </div>
                   ))}
+
+                  {/* Warning as bullet points */}
+                  <div className="flex items-start gap-3 pt-2">
+                    <div className="w-1 h-1 bg-yellow-400 rounded-full mt-2"></div>
+                    <span className="text-yellow-400 text-sm font-bold leading-relaxed">
+                      ⚠️ SEM ESTACIONAMENTO
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-1 h-1 bg-yellow-400 rounded-full mt-2"></div>
+                    <span className="text-yellow-400 text-sm font-bold leading-relaxed">
+                      ⚠️ SEM NETWORKING EXPERIENCE
+                    </span>
+                  </div>
                 </div>
               </div>
 

@@ -42,7 +42,10 @@
       "Bash(curl:*)",
       "Bash(npx sharp-cli:*)",
       "Bash(python:*)",
-      "Bash(pnpm run:*)"
+      "Bash(pnpm run:*)",
+      "Bash(npm install:*)",
+      "Bash(pnpm --version:*)",
+      "Bash(pnpm dev)"
     ],
     "deny": [],
     "ask": []
