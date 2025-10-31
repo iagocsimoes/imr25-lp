@@ -152,7 +152,7 @@ const Plans = () => {
                   {[
                     'Acesso ao setor central (cadeira e mesa)',
                     'Acesso total ao conteúdo do evento',
-                    'Almoço incluído',
+                    'Almoço incluso',
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <div className="w-1 h-1 bg-yellow-400 rounded-full mt-2"></div>
@@ -221,8 +221,8 @@ const Plans = () => {
                   {[
                     'Acesso ao VIP Lounge (cadeira e mesa)',
                     'Acesso total ao conteúdo do evento',
-                    'Café da manhã incluído',
-                    'Almoço incluído',
+                    'Café da manhã incluso',
+                    'Almoço incluso',
                     'Mesa gastronômica e serviço de garçom',
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-3">
@@ -311,8 +311,8 @@ const Plans = () => {
                   {[
                     'Acesso ao VIP Lounge (cadeira e mesa)',
                     'Acesso total ao conteúdo do evento',
-                    'Café da manhã incluído',
-                    'Almoço incluído',
+                    'Café da manhã incluso',
+                    'Almoço incluso',
                     'Mesa gastronômica e serviço de garçom',
                     'Networking Experience com Lásaro do Carmo',
                   ].map((item, i) => (

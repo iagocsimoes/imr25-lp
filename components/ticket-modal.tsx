@@ -179,7 +179,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                               <div className="h-px bg-gradient-to-r from-transparent via-yellow-700/50 to-transparent my-6"></div>
 
                               <div className="space-y-4 flex-1">
-                                {['Acesso ao setor central (cadeira e mesa)', 'Acesso total ao conteúdo do evento', 'Almoço incluído'].map((item, i) => (
+                                {['Acesso ao setor central (cadeira e mesa)', 'Acesso total ao conteúdo do evento', 'Almoço incluso'].map((item, i) => (
                                   <div key={i} className="flex items-start gap-3">
                                     <div className="w-1 h-1 bg-yellow-400 rounded-full mt-2"></div>
                                     <span className="text-gray-300 text-sm leading-relaxed">{item}</span>
@@ -235,7 +235,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                               <div className="h-px bg-gradient-to-r from-transparent via-purple-700/50 to-transparent my-6"></div>
 
                               <div className="space-y-4 flex-1">
-                                {['Acesso ao VIP Lounge (cadeira e mesa)', 'Acesso total ao conteúdo do evento', 'Café da manhã incluído', 'Almoço incluído', 'Mesa gastronômica e serviço de garçom'].map((item, i) => (
+                                {['Acesso ao VIP Lounge (cadeira e mesa)', 'Acesso total ao conteúdo do evento', 'Café da manhã incluso', 'Almoço incluso', 'Mesa gastronômica e serviço de garçom'].map((item, i) => (
                                   <div key={i} className="flex items-start gap-3">
                                     <div className="w-1 h-1 bg-purple-400 rounded-full mt-2"></div>
                                     <span className="text-gray-300 text-sm leading-relaxed">{item}</span>
@@ -310,7 +310,7 @@ const TicketModal = ({ isOpen, onClose }: TicketModalProps) => {
                               <div className="h-px bg-gradient-to-r from-transparent via-[#ec020d]/50 to-transparent my-6"></div>
 
                               <div className="space-y-4 flex-1">
-                                {['Acesso ao VIP Lounge (cadeira e mesa)', 'Café da manhã incluído', 'Almoço incluído', 'Mesa gastronômica e serviço de garçom', 'Acesso total ao conteúdo do evento', 'Networking Experience com Lásaro do Carmo', 'Happy hour exclusivo'].map((item, i) => (
+                                {['Acesso ao VIP Lounge (cadeira e mesa)', 'Café da manhã incluso', 'Almoço incluso', 'Mesa gastronômica e serviço de garçom', 'Acesso total ao conteúdo do evento', 'Networking Experience com Lásaro do Carmo', 'Happy hour exclusivo'].map((item, i) => (
                                   <div key={i} className="flex items-start gap-3">
                                     <div className="w-1 h-1 bg-[#ec020d] rounded-full mt-2"></div>
                                     <span className="text-gray-300 text-sm leading-relaxed">{item}</span>
