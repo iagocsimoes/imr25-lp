@@ -11,12 +11,12 @@ export default function FAQ() {
     {
       question: 'Quando e onde será o IMR25?',
       answer:
-        'O evento acontecerá no dia 12 de novembro de 2025, em Vitória/ES. No Ilha Buffet com conteudo sendo das 08:00h as 19:00h e Networking Exclusive (Apenas para VIPS) das 19:00 as 23:00',
+        'O evento acontecerá no dia 12 de novembro de 2025, em Vitória/ES, no Ilha Buffet.',
     },
     {
       question: 'Qual é a diferença entre os ingressos Black, Gold e VIP?',
       answer:
-        'O ingresso Black dá acesso ao setor posterior e ao conteúdo completo do evento. O Gold garante lugar no setor central, com cadeira e mesa, além de incluir almoço e uma experiência de networking com empresários. Já o VIP oferece posição privilegiada no VIP Lounge, com café da manhã, almoço, mesa gastronômica, serviço de garçom, happy hour exclusivo e networking com Lásaro do Carmo. Escolha seu nível de experiência.',
+        'O ingresso Black dá acesso ao setor posterior e ao conteúdo completo do evento. O Gold garante lugar no setor central, com cadeira e mesa, além de incluir almoço. Já o VIP oferece posição privilegiada no VIP Lounge, com café da manhã, almoço, mesa gastronômica, serviço de garçom, happy hour exclusivo e networking com Lásaro do Carmo. Escolha seu nível de experiência.',
     },
     {
       question: 'O que está incluso no Networking Experience?',

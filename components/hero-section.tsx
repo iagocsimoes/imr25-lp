@@ -230,7 +230,7 @@ const HeroSection = () => {
           { title: 'Mentores', value: '9' },
           { title: 'Empresários Qualificados', value: '1.000' },
           { title: 'Data', value: '12/11/25' },
-          { title: 'Horário', value: '08h às 22h' },
+          { title: 'Horário', value: '07h às 22h' },
         ].map((item, i) => (
           <motion.div
             key={i}
