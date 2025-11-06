@@ -45,7 +45,10 @@
       "Bash(pnpm run:*)",
       "Bash(npm install:*)",
       "Bash(pnpm --version:*)",
-      "Bash(pnpm dev)"
+      "Bash(pnpm dev)",
+      "Bash(PORT=3000 pnpm dev:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill -9)"
     ],
     "deny": [],
     "ask": []

@@ -1,6 +1,5 @@
 'use client'
 
-import ExclusiveBanner from '@/components/exclusive-banner'
 import Description from '@/components/description'
 import BentoGrid from '@/components/bento-grid'
 import FAQ from '@/components/faq-questions'
@@ -27,8 +26,6 @@ export default function Page() {
   return (
     <TicketModalProvider openModal={openModal}>
       <div className="relative bg-slate-950 overflow-hidden">
-        <ExclusiveBanner />
-
         <div className="relative z-50">
           <Header />
           <HeroSection />

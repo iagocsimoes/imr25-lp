@@ -230,7 +230,7 @@ const HeroSection = () => {
           { title: 'Mentores', value: '9' },
           { title: 'Empresários Qualificados', value: '1.000' },
           { title: 'Data', value: '12/11/25' },
-          { title: 'Horário', value: '07h às 22h' },
+          { title: 'Horário', value: 'Credenciamento: 07h às 07:30h\nConteúdo: 08h às 19h\nNetworking Experience*: 19:30h às 22h\n*Exclusivo VIPs' },
         ].map((item, i) => (
           <motion.div
             key={i}
@@ -244,7 +244,7 @@ const HeroSection = () => {
             <h2 className="text-red-600 text-2xl max-sm:text-sm max-sm:px-2">
               {item.title}
             </h2>
-            <span className="text-white text-5xl max-sm:text-xl font-bold">
+            <span className={`text-white font-bold whitespace-pre-line ${item.title === 'Horário' ? 'text-lg max-sm:text-xs leading-relaxed' : 'text-5xl max-sm:text-xl'}`}>
               {item.value}
             </span>
           </motion.div>
